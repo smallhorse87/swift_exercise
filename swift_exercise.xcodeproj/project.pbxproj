@@ -41,6 +41,9 @@
 		81255CB822057A9C0025D549 /* TopicDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255CB722057A9C0025D549 /* TopicDetailViewController.swift */; };
 		81255CBB22057BFC0025D549 /* NodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255CBA22057BFC0025D549 /* NodeModel.swift */; };
 		81255CBD22057C460025D549 /* NodeTopicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255CBC22057C460025D549 /* NodeTopicListViewController.swift */; };
+		81255CBF22058A5C0025D549 /* V2User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255CBE22058A5C0025D549 /* V2User.swift */; };
+		81255CC122058AF30025D549 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255CC022058AF30025D549 /* UserModel.swift */; };
+		81255CC3220594480025D549 /* Request+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255CC2220594480025D549 /* Request+Extension.swift */; };
 		8DBAC6BB0489635EE900D81D /* Pods_swift_exercise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B584EA9FADFCF6332E76B2CB /* Pods_swift_exercise.framework */; };
 /* End PBXBuildFile section */
 
@@ -103,6 +106,9 @@
 		81255CB722057A9C0025D549 /* TopicDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetailViewController.swift; sourceTree = "<group>"; };
 		81255CBA22057BFC0025D549 /* NodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeModel.swift; sourceTree = "<group>"; };
 		81255CBC22057C460025D549 /* NodeTopicListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeTopicListViewController.swift; sourceTree = "<group>"; };
+		81255CBE22058A5C0025D549 /* V2User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2User.swift; sourceTree = "<group>"; };
+		81255CC022058AF30025D549 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		81255CC2220594480025D549 /* Request+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Request+Extension.swift"; sourceTree = "<group>"; };
 		AA752189752788F369072082 /* Pods-swift_exercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift_exercise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift_exercise/Pods-swift_exercise.debug.xcconfig"; sourceTree = "<group>"; };
 		B584EA9FADFCF6332E76B2CB /* Pods_swift_exercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_exercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -169,6 +175,7 @@
 				81255C9F22055DE40025D549 /* V2EXMentionedBindingParser.swift */,
 				81255CA1220560410025D549 /* V2UsersKeychain.swift */,
 				81255CA322056CF40025D549 /* AnalyzeURLHelper.swift */,
+				81255CBE22058A5C0025D549 /* V2User.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -244,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				81255CA7220570870025D549 /* UITableView+Extension.swift */,
+				81255CC2220594480025D549 /* Request+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -281,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				81255CBA22057BFC0025D549 /* NodeModel.swift */,
+				81255CC022058AF30025D549 /* UserModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -526,8 +535,10 @@
 				81255CBD22057C460025D549 /* NodeTopicListViewController.swift in Sources */,
 				81255C9E220549520025D549 /* V2Response.swift in Sources */,
 				81255CB822057A9C0025D549 /* TopicDetailViewController.swift in Sources */,
+				81255CC122058AF30025D549 /* UserModel.swift in Sources */,
 				81255CA2220560410025D549 /* V2UsersKeychain.swift in Sources */,
 				81255CAB220572430025D549 /* V2WebViewViewController.swift in Sources */,
+				81255CC3220594480025D549 /* Request+Extension.swift in Sources */,
 				0473DCCE2204FE3600141FB6 /* ViewController.swift in Sources */,
 				81255C9C220547320025D549 /* V2Client.swift in Sources */,
 				81255CA422056CF40025D549 /* AnalyzeURLHelper.swift in Sources */,
@@ -538,6 +549,7 @@
 				81255CAE220572E30025D549 /* V2WebViewProgressView.swift in Sources */,
 				81255CBB22057BFC0025D549 /* NodeModel.swift in Sources */,
 				81255C96220529D70025D549 /* V2EXSettings.swift in Sources */,
+				81255CBF22058A5C0025D549 /* V2User.swift in Sources */,
 				81255CA8220570870025D549 /* UITableView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
