@@ -24,6 +24,10 @@
 		0473DCE12204FE3700141FB6 /* swift_exerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473DCE02204FE3700141FB6 /* swift_exerciseTests.swift */; };
 		0473DCEC2204FE3700141FB6 /* swift_exerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473DCEB2204FE3700141FB6 /* swift_exerciseUITests.swift */; };
 		81255C96220529D70025D549 /* V2EXSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255C95220529D70025D549 /* V2EXSettings.swift */; };
+		81255C982205398D0025D549 /* V2Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255C972205398D0025D549 /* V2Style.swift */; };
+		81255C9A220543970025D549 /* V2ex+Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255C99220543970025D549 /* V2ex+Defines.swift */; };
+		81255C9C220547320025D549 /* V2Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255C9B220547320025D549 /* V2Client.swift */; };
+		81255C9E220549520025D549 /* V2Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255C9D220549520025D549 /* V2Response.swift */; };
 		8DBAC6BB0489635EE900D81D /* Pods_swift_exercise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B584EA9FADFCF6332E76B2CB /* Pods_swift_exercise.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +73,10 @@
 		0473DCED2204FE3700141FB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52921706080F2641F7739083 /* Pods-swift_exercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift_exercise.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift_exercise/Pods-swift_exercise.release.xcconfig"; sourceTree = "<group>"; };
 		81255C95220529D70025D549 /* V2EXSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2EXSettings.swift; sourceTree = "<group>"; };
+		81255C972205398D0025D549 /* V2Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2Style.swift; sourceTree = "<group>"; };
+		81255C99220543970025D549 /* V2ex+Defines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "V2ex+Defines.swift"; sourceTree = "<group>"; };
+		81255C9B220547320025D549 /* V2Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2Client.swift; sourceTree = "<group>"; };
+		81255C9D220549520025D549 /* V2Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2Response.swift; sourceTree = "<group>"; };
 		AA752189752788F369072082 /* Pods-swift_exercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift_exercise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift_exercise/Pods-swift_exercise.debug.xcconfig"; sourceTree = "<group>"; };
 		B584EA9FADFCF6332E76B2CB /* Pods_swift_exercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_exercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -128,6 +136,10 @@
 				04456517220502BE00DF46E7 /* Extension */,
 				0445651A2205032900DF46E7 /* V2EXColor.swift */,
 				81255C95220529D70025D549 /* V2EXSettings.swift */,
+				81255C972205398D0025D549 /* V2Style.swift */,
+				81255C99220543970025D549 /* V2ex+Defines.swift */,
+				81255C9B220547320025D549 /* V2Client.swift */,
+				81255C9D220549520025D549 /* V2Response.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -443,7 +455,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81255C982205398D0025D549 /* V2Style.swift in Sources */,
+				81255C9A220543970025D549 /* V2ex+Defines.swift in Sources */,
+				81255C9E220549520025D549 /* V2Response.swift in Sources */,
 				0473DCCE2204FE3600141FB6 /* ViewController.swift in Sources */,
+				81255C9C220547320025D549 /* V2Client.swift in Sources */,
 				0445651B2205032900DF46E7 /* V2EXColor.swift in Sources */,
 				0473DCCC2204FE3600141FB6 /* AppDelegate.swift in Sources */,
 				81255C96220529D70025D549 /* V2EXSettings.swift in Sources */,
