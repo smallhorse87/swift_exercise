@@ -28,6 +28,19 @@
 		81255C9A220543970025D549 /* V2ex+Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255C99220543970025D549 /* V2ex+Defines.swift */; };
 		81255C9C220547320025D549 /* V2Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255C9B220547320025D549 /* V2Client.swift */; };
 		81255C9E220549520025D549 /* V2Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255C9D220549520025D549 /* V2Response.swift */; };
+		81255CA022055DE40025D549 /* V2EXMentionedBindingParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255C9F22055DE40025D549 /* V2EXMentionedBindingParser.swift */; };
+		81255CA2220560410025D549 /* V2UsersKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255CA1220560410025D549 /* V2UsersKeychain.swift */; };
+		81255CA422056CF40025D549 /* AnalyzeURLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255CA322056CF40025D549 /* AnalyzeURLHelper.swift */; };
+		81255CA8220570870025D549 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255CA7220570870025D549 /* UITableView+Extension.swift */; };
+		81255CAB220572430025D549 /* V2WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255CAA220572430025D549 /* V2WebViewViewController.swift */; };
+		81255CAE220572E30025D549 /* V2WebViewProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255CAD220572E30025D549 /* V2WebViewProgressView.swift */; };
+		81255CB0220573610025D549 /* V2ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255CAF220573610025D549 /* V2ActivityViewController.swift */; };
+		81255CB2220577940025D549 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255CB1220577940025D549 /* HomeViewController.swift */; };
+		81255CB4220577DA0025D549 /* V2EXNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255CB3220577DA0025D549 /* V2EXNavigationController.swift */; };
+		81255CB6220579220025D549 /* MemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255CB5220579220025D549 /* MemberViewController.swift */; };
+		81255CB822057A9C0025D549 /* TopicDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255CB722057A9C0025D549 /* TopicDetailViewController.swift */; };
+		81255CBB22057BFC0025D549 /* NodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255CBA22057BFC0025D549 /* NodeModel.swift */; };
+		81255CBD22057C460025D549 /* NodeTopicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255CBC22057C460025D549 /* NodeTopicListViewController.swift */; };
 		8DBAC6BB0489635EE900D81D /* Pods_swift_exercise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B584EA9FADFCF6332E76B2CB /* Pods_swift_exercise.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +90,19 @@
 		81255C99220543970025D549 /* V2ex+Defines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "V2ex+Defines.swift"; sourceTree = "<group>"; };
 		81255C9B220547320025D549 /* V2Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2Client.swift; sourceTree = "<group>"; };
 		81255C9D220549520025D549 /* V2Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2Response.swift; sourceTree = "<group>"; };
+		81255C9F22055DE40025D549 /* V2EXMentionedBindingParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2EXMentionedBindingParser.swift; sourceTree = "<group>"; };
+		81255CA1220560410025D549 /* V2UsersKeychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2UsersKeychain.swift; sourceTree = "<group>"; };
+		81255CA322056CF40025D549 /* AnalyzeURLHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeURLHelper.swift; sourceTree = "<group>"; };
+		81255CA7220570870025D549 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		81255CAA220572430025D549 /* V2WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2WebViewViewController.swift; sourceTree = "<group>"; };
+		81255CAD220572E30025D549 /* V2WebViewProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2WebViewProgressView.swift; sourceTree = "<group>"; };
+		81255CAF220573610025D549 /* V2ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2ActivityViewController.swift; sourceTree = "<group>"; };
+		81255CB1220577940025D549 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		81255CB3220577DA0025D549 /* V2EXNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2EXNavigationController.swift; sourceTree = "<group>"; };
+		81255CB5220579220025D549 /* MemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberViewController.swift; sourceTree = "<group>"; };
+		81255CB722057A9C0025D549 /* TopicDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetailViewController.swift; sourceTree = "<group>"; };
+		81255CBA22057BFC0025D549 /* NodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeModel.swift; sourceTree = "<group>"; };
+		81255CBC22057C460025D549 /* NodeTopicListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeTopicListViewController.swift; sourceTree = "<group>"; };
 		AA752189752788F369072082 /* Pods-swift_exercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift_exercise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift_exercise/Pods-swift_exercise.debug.xcconfig"; sourceTree = "<group>"; };
 		B584EA9FADFCF6332E76B2CB /* Pods_swift_exercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_exercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -132,35 +158,26 @@
 		044565162205029C00DF46E7 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				04456518220502C900DF46E7 /* UITableView+FINAutomaticHeightCell */,
-				04456517220502BE00DF46E7 /* Extension */,
+				81255CA6220570610025D549 /* UITableView+FINAutomaticHeightCell */,
+				81255CA5220570510025D549 /* Extension */,
 				0445651A2205032900DF46E7 /* V2EXColor.swift */,
 				81255C95220529D70025D549 /* V2EXSettings.swift */,
 				81255C972205398D0025D549 /* V2Style.swift */,
 				81255C99220543970025D549 /* V2ex+Defines.swift */,
 				81255C9B220547320025D549 /* V2Client.swift */,
 				81255C9D220549520025D549 /* V2Response.swift */,
+				81255C9F22055DE40025D549 /* V2EXMentionedBindingParser.swift */,
+				81255CA1220560410025D549 /* V2UsersKeychain.swift */,
+				81255CA322056CF40025D549 /* AnalyzeURLHelper.swift */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		04456517220502BE00DF46E7 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		04456518220502C900DF46E7 /* UITableView+FINAutomaticHeightCell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "UITableView+FINAutomaticHeightCell";
 			sourceTree = "<group>";
 		};
 		0473DCBF2204FE3600141FB6 = {
 			isa = PBXGroup;
 			children = (
+				81255CB922057BEA0025D549 /* Model */,
+				81255CA9220572340025D549 /* Controller */,
 				044565162205029C00DF46E7 /* Common */,
 				04456506220501D100DF46E7 /* Resources */,
 				044565042204FF6400DF46E7 /* Podfile */,
@@ -192,6 +209,7 @@
 				0473DCD22204FE3700141FB6 /* Assets.xcassets */,
 				0473DCD42204FE3700141FB6 /* LaunchScreen.storyboard */,
 				0473DCD72204FE3700141FB6 /* Info.plist */,
+				81255CB3220577DA0025D549 /* V2EXNavigationController.swift */,
 			);
 			path = swift_exercise;
 			sourceTree = "<group>";
@@ -220,6 +238,51 @@
 				B584EA9FADFCF6332E76B2CB /* Pods_swift_exercise.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		81255CA5220570510025D549 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				81255CA7220570870025D549 /* UITableView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		81255CA6220570610025D549 /* UITableView+FINAutomaticHeightCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "UITableView+FINAutomaticHeightCell";
+			sourceTree = "<group>";
+		};
+		81255CA9220572340025D549 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				81255CAC220572D30025D549 /* V2WebViewProgress */,
+				81255CAA220572430025D549 /* V2WebViewViewController.swift */,
+				81255CAF220573610025D549 /* V2ActivityViewController.swift */,
+				81255CB1220577940025D549 /* HomeViewController.swift */,
+				81255CB5220579220025D549 /* MemberViewController.swift */,
+				81255CB722057A9C0025D549 /* TopicDetailViewController.swift */,
+				81255CBC22057C460025D549 /* NodeTopicListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		81255CAC220572D30025D549 /* V2WebViewProgress */ = {
+			isa = PBXGroup;
+			children = (
+				81255CAD220572E30025D549 /* V2WebViewProgressView.swift */,
+			);
+			path = V2WebViewProgress;
+			sourceTree = "<group>";
+		};
+		81255CB922057BEA0025D549 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				81255CBA22057BFC0025D549 /* NodeModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		86A976BAFD67C957C8098579 /* Pods */ = {
@@ -455,14 +518,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81255CB6220579220025D549 /* MemberViewController.swift in Sources */,
 				81255C982205398D0025D549 /* V2Style.swift in Sources */,
 				81255C9A220543970025D549 /* V2ex+Defines.swift in Sources */,
+				81255CB0220573610025D549 /* V2ActivityViewController.swift in Sources */,
+				81255CA022055DE40025D549 /* V2EXMentionedBindingParser.swift in Sources */,
+				81255CBD22057C460025D549 /* NodeTopicListViewController.swift in Sources */,
 				81255C9E220549520025D549 /* V2Response.swift in Sources */,
+				81255CB822057A9C0025D549 /* TopicDetailViewController.swift in Sources */,
+				81255CA2220560410025D549 /* V2UsersKeychain.swift in Sources */,
+				81255CAB220572430025D549 /* V2WebViewViewController.swift in Sources */,
 				0473DCCE2204FE3600141FB6 /* ViewController.swift in Sources */,
 				81255C9C220547320025D549 /* V2Client.swift in Sources */,
+				81255CA422056CF40025D549 /* AnalyzeURLHelper.swift in Sources */,
+				81255CB4220577DA0025D549 /* V2EXNavigationController.swift in Sources */,
 				0445651B2205032900DF46E7 /* V2EXColor.swift in Sources */,
+				81255CB2220577940025D549 /* HomeViewController.swift in Sources */,
 				0473DCCC2204FE3600141FB6 /* AppDelegate.swift in Sources */,
+				81255CAE220572E30025D549 /* V2WebViewProgressView.swift in Sources */,
+				81255CBB22057BFC0025D549 /* NodeModel.swift in Sources */,
 				81255C96220529D70025D549 /* V2EXSettings.swift in Sources */,
+				81255CA8220570870025D549 /* UITableView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

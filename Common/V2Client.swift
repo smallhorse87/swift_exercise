@@ -14,15 +14,15 @@ class V2Client: NSObject {
     
     var drawerController : DrawerController? = nil
     //stony todo
-//    var centerViewController : HomeViewController? =nil
-//    var centerNavigation : V2EXNavigationController? =nil
+    var centerViewController : HomeViewController? = nil
+    var centerNavigation : V2EXNavigationController? = nil
 
     //当前程序中，最上层的 NavigationController
-//    var topNavigationController : UINavigationController {
-//        get {
-//            return V2Client.getTopNavigationController(V2Client.sharedInstance.centerNavigation!)
-//        }
-//    }
+    var topNavigationController : UINavigationController {
+        get {
+            return V2Client.getTopNavigationController(V2Client.sharedInstance.centerNavigation!)
+        }
+    }
     
     fileprivate class func getTopNavigationController(_ currentNavigationController:UINavigationController) -> UINavigationController {
         if let topNav = currentNavigationController.visibleViewController?.navigationController {
