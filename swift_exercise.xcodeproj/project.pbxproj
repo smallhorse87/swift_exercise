@@ -44,6 +44,11 @@
 		81255CBF22058A5C0025D549 /* V2User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255CBE22058A5C0025D549 /* V2User.swift */; };
 		81255CC122058AF30025D549 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255CC022058AF30025D549 /* UserModel.swift */; };
 		81255CC3220594480025D549 /* Request+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255CC2220594480025D549 /* Request+Extension.swift */; };
+		81DF14CD22068B26008DFEC9 /* V2ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DF14CC22068B26008DFEC9 /* V2ProgressHUD.swift */; };
+		81DF14CF22068EDE008DFEC9 /* V2LeftAlignedCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DF14CE22068EDE008DFEC9 /* V2LeftAlignedCollectionViewFlowLayout.swift */; };
+		81DF14D12206921C008DFEC9 /* WebViewImageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DF14D02206921C008DFEC9 /* WebViewImageProtocol.swift */; };
+		81DF14D32206999A008DFEC9 /* JSTools.js in Resources */ = {isa = PBXBuildFile; fileRef = 81DF14D22206999A008DFEC9 /* JSTools.js */; };
+		81DF14D5220699B7008DFEC9 /* V2HitTestSlopButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DF14D4220699B7008DFEC9 /* V2HitTestSlopButton.swift */; };
 		8DBAC6BB0489635EE900D81D /* Pods_swift_exercise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B584EA9FADFCF6332E76B2CB /* Pods_swift_exercise.framework */; };
 /* End PBXBuildFile section */
 
@@ -109,6 +114,11 @@
 		81255CBE22058A5C0025D549 /* V2User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2User.swift; sourceTree = "<group>"; };
 		81255CC022058AF30025D549 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		81255CC2220594480025D549 /* Request+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Request+Extension.swift"; sourceTree = "<group>"; };
+		81DF14CC22068B26008DFEC9 /* V2ProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2ProgressHUD.swift; sourceTree = "<group>"; };
+		81DF14CE22068EDE008DFEC9 /* V2LeftAlignedCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2LeftAlignedCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		81DF14D02206921C008DFEC9 /* WebViewImageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewImageProtocol.swift; sourceTree = "<group>"; };
+		81DF14D22206999A008DFEC9 /* JSTools.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = JSTools.js; sourceTree = "<group>"; };
+		81DF14D4220699B7008DFEC9 /* V2HitTestSlopButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2HitTestSlopButton.swift; sourceTree = "<group>"; };
 		AA752189752788F369072082 /* Pods-swift_exercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift_exercise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift_exercise/Pods-swift_exercise.debug.xcconfig"; sourceTree = "<group>"; };
 		B584EA9FADFCF6332E76B2CB /* Pods_swift_exercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_exercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -164,8 +174,9 @@
 		044565162205029C00DF46E7 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				81255CA6220570610025D549 /* UITableView+FINAutomaticHeightCell */,
+				81DF14D22206999A008DFEC9 /* JSTools.js */,
 				81255CA5220570510025D549 /* Extension */,
+				81255CA6220570610025D549 /* UITableView+FINAutomaticHeightCell */,
 				0445651A2205032900DF46E7 /* V2EXColor.swift */,
 				81255C95220529D70025D549 /* V2EXSettings.swift */,
 				81255C972205398D0025D549 /* V2Style.swift */,
@@ -176,6 +187,10 @@
 				81255CA1220560410025D549 /* V2UsersKeychain.swift */,
 				81255CA322056CF40025D549 /* AnalyzeURLHelper.swift */,
 				81255CBE22058A5C0025D549 /* V2User.swift */,
+				81DF14CC22068B26008DFEC9 /* V2ProgressHUD.swift */,
+				81DF14CE22068EDE008DFEC9 /* V2LeftAlignedCollectionViewFlowLayout.swift */,
+				81DF14D02206921C008DFEC9 /* WebViewImageProtocol.swift */,
+				81DF14D4220699B7008DFEC9 /* V2HitTestSlopButton.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -412,6 +427,7 @@
 				04456514220501D100DF46E7 /* 12.jpg in Resources */,
 				0445650F220501D100DF46E7 /* Media.xcassets in Resources */,
 				0473DCD62204FE3700141FB6 /* LaunchScreen.storyboard in Resources */,
+				81DF14D32206999A008DFEC9 /* JSTools.js in Resources */,
 				04456510220501D100DF46E7 /* baseStyle.css in Resources */,
 				0473DCD32204FE3700141FB6 /* Assets.xcassets in Resources */,
 				044565052204FF6400DF46E7 /* Podfile in Resources */,
@@ -531,7 +547,10 @@
 				81255C982205398D0025D549 /* V2Style.swift in Sources */,
 				81255C9A220543970025D549 /* V2ex+Defines.swift in Sources */,
 				81255CB0220573610025D549 /* V2ActivityViewController.swift in Sources */,
+				81DF14CF22068EDE008DFEC9 /* V2LeftAlignedCollectionViewFlowLayout.swift in Sources */,
 				81255CA022055DE40025D549 /* V2EXMentionedBindingParser.swift in Sources */,
+				81DF14CD22068B26008DFEC9 /* V2ProgressHUD.swift in Sources */,
+				81DF14D5220699B7008DFEC9 /* V2HitTestSlopButton.swift in Sources */,
 				81255CBD22057C460025D549 /* NodeTopicListViewController.swift in Sources */,
 				81255C9E220549520025D549 /* V2Response.swift in Sources */,
 				81255CB822057A9C0025D549 /* TopicDetailViewController.swift in Sources */,
@@ -551,6 +570,7 @@
 				81255C96220529D70025D549 /* V2EXSettings.swift in Sources */,
 				81255CBF22058A5C0025D549 /* V2User.swift in Sources */,
 				81255CA8220570870025D549 /* UITableView+Extension.swift in Sources */,
+				81DF14D12206921C008DFEC9 /* WebViewImageProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
