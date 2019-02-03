@@ -26,6 +26,7 @@
 		0473DCD62204FE3700141FB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0473DCD42204FE3700141FB6 /* LaunchScreen.storyboard */; };
 		0473DCE12204FE3700141FB6 /* swift_exerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473DCE02204FE3700141FB6 /* swift_exerciseTests.swift */; };
 		0473DCEC2204FE3700141FB6 /* swift_exerciseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473DCEB2204FE3700141FB6 /* swift_exerciseUITests.swift */; };
+		04F886B72206E698002AD137 /* UITableView+FINAutomaticHeightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F886B62206E698002AD137 /* UITableView+FINAutomaticHeightCell.swift */; };
 		81255C96220529D70025D549 /* V2EXSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255C95220529D70025D549 /* V2EXSettings.swift */; };
 		81255C982205398D0025D549 /* V2Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255C972205398D0025D549 /* V2Style.swift */; };
 		81255C9A220543970025D549 /* V2ex+Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255C99220543970025D549 /* V2ex+Defines.swift */; };
@@ -98,6 +99,7 @@
 		0473DCE72204FE3700141FB6 /* swift_exerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = swift_exerciseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0473DCEB2204FE3700141FB6 /* swift_exerciseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_exerciseUITests.swift; sourceTree = "<group>"; };
 		0473DCED2204FE3700141FB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F886B62206E698002AD137 /* UITableView+FINAutomaticHeightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+FINAutomaticHeightCell.swift"; sourceTree = "<group>"; };
 		52921706080F2641F7739083 /* Pods-swift_exercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift_exercise.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift_exercise/Pods-swift_exercise.release.xcconfig"; sourceTree = "<group>"; };
 		81255C95220529D70025D549 /* V2EXSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2EXSettings.swift; sourceTree = "<group>"; };
 		81255C972205398D0025D549 /* V2Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2Style.swift; sourceTree = "<group>"; };
@@ -283,6 +285,7 @@
 		81255CA6220570610025D549 /* UITableView+FINAutomaticHeightCell */ = {
 			isa = PBXGroup;
 			children = (
+				04F886B62206E698002AD137 /* UITableView+FINAutomaticHeightCell.swift */,
 			);
 			path = "UITableView+FINAutomaticHeightCell";
 			sourceTree = "<group>";
@@ -564,6 +567,7 @@
 				81255CBD22057C460025D549 /* NodeTopicListViewController.swift in Sources */,
 				81255C9E220549520025D549 /* V2Response.swift in Sources */,
 				81255CB822057A9C0025D549 /* TopicDetailViewController.swift in Sources */,
+				04F886B72206E698002AD137 /* UITableView+FINAutomaticHeightCell.swift in Sources */,
 				81255CC122058AF30025D549 /* UserModel.swift in Sources */,
 				81255CA2220560410025D549 /* V2UsersKeychain.swift in Sources */,
 				81255CAB220572430025D549 /* V2WebViewViewController.swift in Sources */,
