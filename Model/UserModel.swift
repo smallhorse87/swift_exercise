@@ -11,4 +11,6 @@ import UIKit
 //stony todo
 class UserModel: NSObject {
     var username:String?
+    
+    class func dailyRedeem() {}
 }

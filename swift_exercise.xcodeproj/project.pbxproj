@@ -29,6 +29,9 @@
 		04F886B72206E698002AD137 /* UITableView+FINAutomaticHeightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F886B62206E698002AD137 /* UITableView+FINAutomaticHeightCell.swift */; };
 		04F886BB22071316002AD137 /* TopicListApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F886BA22071316002AD137 /* TopicListApi.swift */; };
 		04F886BD2207152E002AD137 /* V2EXTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F886BC2207152E002AD137 /* V2EXTargetType.swift */; };
+		04F886BF22072118002AD137 /* Observable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F886BE22072118002AD137 /* Observable+Extension.swift */; };
+		04F886C12207B1E7002AD137 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F886C02207B1E7002AD137 /* BaseModel.swift */; };
+		04F886C32207B37E002AD137 /* TopicListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F886C22207B37E002AD137 /* TopicListModel.swift */; };
 		81255C96220529D70025D549 /* V2EXSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255C95220529D70025D549 /* V2EXSettings.swift */; };
 		81255C982205398D0025D549 /* V2Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255C972205398D0025D549 /* V2Style.swift */; };
 		81255C9A220543970025D549 /* V2ex+Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255C99220543970025D549 /* V2ex+Defines.swift */; };
@@ -104,6 +107,9 @@
 		04F886B62206E698002AD137 /* UITableView+FINAutomaticHeightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+FINAutomaticHeightCell.swift"; sourceTree = "<group>"; };
 		04F886BA22071316002AD137 /* TopicListApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicListApi.swift; sourceTree = "<group>"; };
 		04F886BC2207152E002AD137 /* V2EXTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2EXTargetType.swift; sourceTree = "<group>"; };
+		04F886BE22072118002AD137 /* Observable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Extension.swift"; sourceTree = "<group>"; };
+		04F886C02207B1E7002AD137 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		04F886C22207B37E002AD137 /* TopicListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicListModel.swift; sourceTree = "<group>"; };
 		52921706080F2641F7739083 /* Pods-swift_exercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift_exercise.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift_exercise/Pods-swift_exercise.release.xcconfig"; sourceTree = "<group>"; };
 		81255C95220529D70025D549 /* V2EXSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2EXSettings.swift; sourceTree = "<group>"; };
 		81255C972205398D0025D549 /* V2Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2Style.swift; sourceTree = "<group>"; };
@@ -278,6 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				04F886BC2207152E002AD137 /* V2EXTargetType.swift */,
+				04F886BE22072118002AD137 /* Observable+Extension.swift */,
 			);
 			path = Moya;
 			sourceTree = "<group>";
@@ -337,6 +344,8 @@
 			children = (
 				04F886B8220712D8002AD137 /* API */,
 				04F886B9220712E6002AD137 /* Moya */,
+				04F886C02207B1E7002AD137 /* BaseModel.swift */,
+				04F886C22207B37E002AD137 /* TopicListModel.swift */,
 				81255CBA22057BFC0025D549 /* NodeModel.swift */,
 				81255CC022058AF30025D549 /* UserModel.swift */,
 			);
@@ -589,11 +598,13 @@
 				81255CBD22057C460025D549 /* NodeTopicListViewController.swift in Sources */,
 				81255C9E220549520025D549 /* V2Response.swift in Sources */,
 				04F886BD2207152E002AD137 /* V2EXTargetType.swift in Sources */,
+				04F886BF22072118002AD137 /* Observable+Extension.swift in Sources */,
 				81255CB822057A9C0025D549 /* TopicDetailViewController.swift in Sources */,
 				04F886BB22071316002AD137 /* TopicListApi.swift in Sources */,
 				04F886B72206E698002AD137 /* UITableView+FINAutomaticHeightCell.swift in Sources */,
 				81255CC122058AF30025D549 /* UserModel.swift in Sources */,
 				81255CA2220560410025D549 /* V2UsersKeychain.swift in Sources */,
+				04F886C12207B1E7002AD137 /* BaseModel.swift in Sources */,
 				81255CAB220572430025D549 /* V2WebViewViewController.swift in Sources */,
 				81255CC3220594480025D549 /* Request+Extension.swift in Sources */,
 				0473DCCE2204FE3600141FB6 /* ViewController.swift in Sources */,
@@ -602,6 +613,7 @@
 				81255CB4220577DA0025D549 /* V2EXNavigationController.swift in Sources */,
 				0445651D2206DBAC00DF46E7 /* UIImage+Extension.swift in Sources */,
 				0445651B2205032900DF46E7 /* V2EXColor.swift in Sources */,
+				04F886C32207B37E002AD137 /* TopicListModel.swift in Sources */,
 				81255CB2220577940025D549 /* HomeViewController.swift in Sources */,
 				0473DCCC2204FE3600141FB6 /* AppDelegate.swift in Sources */,
 				81255CAE220572E30025D549 /* V2WebViewProgressView.swift in Sources */,
