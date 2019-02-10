@@ -61,6 +61,15 @@
 		81DF14D32206999A008DFEC9 /* JSTools.js in Resources */ = {isa = PBXBuildFile; fileRef = 81DF14D22206999A008DFEC9 /* JSTools.js */; };
 		81DF14D5220699B7008DFEC9 /* V2HitTestSlopButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DF14D4220699B7008DFEC9 /* V2HitTestSlopButton.swift */; };
 		81EEBED8220FE65100F76A43 /* LeftNodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EEBED7220FE65100F76A43 /* LeftNodeTableViewCell.swift */; };
+		81EEBEDA220FEA4100F76A43 /* RightNodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EEBED9220FEA4100F76A43 /* RightNodeTableViewCell.swift */; };
+		81EEBEDC220FEC3000F76A43 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EEBEDB220FEC3000F76A43 /* NotificationTableViewCell.swift */; };
+		81EEBEDE220FED8A00F76A43 /* V2SpacingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EEBEDD220FED8A00F76A43 /* V2SpacingLabel.swift */; };
+		81EEBEE3220FFCD400F76A43 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EEBEE2220FFCD400F76A43 /* UIButton+Extension.swift */; };
+		81EEBEE5220FFE0800F76A43 /* NotificationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EEBEE4220FFE0800F76A43 /* NotificationsModel.swift */; };
+		81EEBEE7220FFE5900F76A43 /* TopicCommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EEBEE6220FFE5900F76A43 /* TopicCommentModel.swift */; };
+		81EEBEE9220FFE7600F76A43 /* TopicDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EEBEE8220FFE7600F76A43 /* TopicDetailModel.swift */; };
+		81EEBEEB220FFEA800F76A43 /* MemberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EEBEEA220FFEA800F76A43 /* MemberModel.swift */; };
+		81EEBEED220FFED400F76A43 /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EEBEEC220FFED400F76A43 /* UserApi.swift */; };
 		8DBAC6BB0489635EE900D81D /* Pods_swift_exercise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B584EA9FADFCF6332E76B2CB /* Pods_swift_exercise.framework */; };
 /* End PBXBuildFile section */
 
@@ -143,6 +152,15 @@
 		81DF14D22206999A008DFEC9 /* JSTools.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = JSTools.js; sourceTree = "<group>"; };
 		81DF14D4220699B7008DFEC9 /* V2HitTestSlopButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2HitTestSlopButton.swift; sourceTree = "<group>"; };
 		81EEBED7220FE65100F76A43 /* LeftNodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftNodeTableViewCell.swift; sourceTree = "<group>"; };
+		81EEBED9220FEA4100F76A43 /* RightNodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightNodeTableViewCell.swift; sourceTree = "<group>"; };
+		81EEBEDB220FEC3000F76A43 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		81EEBEDD220FED8A00F76A43 /* V2SpacingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2SpacingLabel.swift; sourceTree = "<group>"; };
+		81EEBEE2220FFCD400F76A43 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		81EEBEE4220FFE0800F76A43 /* NotificationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsModel.swift; sourceTree = "<group>"; };
+		81EEBEE6220FFE5900F76A43 /* TopicCommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicCommentModel.swift; sourceTree = "<group>"; };
+		81EEBEE8220FFE7600F76A43 /* TopicDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetailModel.swift; sourceTree = "<group>"; };
+		81EEBEEA220FFEA800F76A43 /* MemberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberModel.swift; sourceTree = "<group>"; };
+		81EEBEEC220FFED400F76A43 /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
 		AA752189752788F369072082 /* Pods-swift_exercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift_exercise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift_exercise/Pods-swift_exercise.debug.xcconfig"; sourceTree = "<group>"; };
 		B584EA9FADFCF6332E76B2CB /* Pods_swift_exercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_exercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -353,8 +371,13 @@
 				04F886B9220712E6002AD137 /* Moya */,
 				04F886C02207B1E7002AD137 /* BaseModel.swift */,
 				04F886C22207B37E002AD137 /* TopicListModel.swift */,
-				81255CBA22057BFC0025D549 /* NodeModel.swift */,
+				81EEBEE6220FFE5900F76A43 /* TopicCommentModel.swift */,
+				81EEBEE8220FFE7600F76A43 /* TopicDetailModel.swift */,
 				81255CC022058AF30025D549 /* UserModel.swift */,
+				81EEBEE4220FFE0800F76A43 /* NotificationsModel.swift */,
+				81EEBEEA220FFEA800F76A43 /* MemberModel.swift */,
+				81255CBA22057BFC0025D549 /* NodeModel.swift */,
+				81EEBEEC220FFED400F76A43 /* UserApi.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -362,11 +385,23 @@
 		81BC50DA220FC15B00424215 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				81EEBEE1220FEDA600F76A43 /* Control */,
 				81BC50DB220FC19600424215 /* HomeTopicListTableViewCell.swift */,
 				81BC50DD220FD9B400424215 /* BaseDetailTableViewCell.swift */,
 				81EEBED7220FE65100F76A43 /* LeftNodeTableViewCell.swift */,
+				81EEBED9220FEA4100F76A43 /* RightNodeTableViewCell.swift */,
+				81EEBEDB220FEC3000F76A43 /* NotificationTableViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		81EEBEE1220FEDA600F76A43 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				81EEBEDD220FED8A00F76A43 /* V2SpacingLabel.swift */,
+				81EEBEE2220FFCD400F76A43 /* UIButton+Extension.swift */,
+			);
+			path = Control;
 			sourceTree = "<group>";
 		};
 		86A976BAFD67C957C8098579 /* Pods */ = {
@@ -603,6 +638,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81EEBEDC220FEC3000F76A43 /* NotificationTableViewCell.swift in Sources */,
 				0445651F2206DD7700DF46E7 /* UIImageView+Extension.swift in Sources */,
 				81255CB6220579220025D549 /* MemberViewController.swift in Sources */,
 				81EEBED8220FE65100F76A43 /* LeftNodeTableViewCell.swift in Sources */,
@@ -614,10 +650,12 @@
 				81255CA022055DE40025D549 /* V2EXMentionedBindingParser.swift in Sources */,
 				81DF14CD22068B26008DFEC9 /* V2ProgressHUD.swift in Sources */,
 				81DF14D5220699B7008DFEC9 /* V2HitTestSlopButton.swift in Sources */,
+				81EEBEE5220FFE0800F76A43 /* NotificationsModel.swift in Sources */,
 				81255CBD22057C460025D549 /* NodeTopicListViewController.swift in Sources */,
 				81255C9E220549520025D549 /* V2Response.swift in Sources */,
 				04F886BD2207152E002AD137 /* V2EXTargetType.swift in Sources */,
 				04F886BF22072118002AD137 /* Observable+Extension.swift in Sources */,
+				81EEBEE7220FFE5900F76A43 /* TopicCommentModel.swift in Sources */,
 				81255CB822057A9C0025D549 /* TopicDetailViewController.swift in Sources */,
 				04F886BB22071316002AD137 /* TopicListApi.swift in Sources */,
 				04F886B72206E698002AD137 /* UITableView+FINAutomaticHeightCell.swift in Sources */,
@@ -626,21 +664,27 @@
 				04F886C12207B1E7002AD137 /* BaseModel.swift in Sources */,
 				81BC50DE220FD9B400424215 /* BaseDetailTableViewCell.swift in Sources */,
 				81255CAB220572430025D549 /* V2WebViewViewController.swift in Sources */,
+				81EEBEED220FFED400F76A43 /* UserApi.swift in Sources */,
 				81255CC3220594480025D549 /* Request+Extension.swift in Sources */,
+				81EEBEE3220FFCD400F76A43 /* UIButton+Extension.swift in Sources */,
 				0473DCCE2204FE3600141FB6 /* ViewController.swift in Sources */,
 				81255C9C220547320025D549 /* V2Client.swift in Sources */,
 				81255CA422056CF40025D549 /* AnalyzeURLHelper.swift in Sources */,
 				81255CB4220577DA0025D549 /* V2EXNavigationController.swift in Sources */,
+				81EEBEE9220FFE7600F76A43 /* TopicDetailModel.swift in Sources */,
 				0445651D2206DBAC00DF46E7 /* UIImage+Extension.swift in Sources */,
 				0445651B2205032900DF46E7 /* V2EXColor.swift in Sources */,
 				04F886C32207B37E002AD137 /* TopicListModel.swift in Sources */,
 				81255CB2220577940025D549 /* HomeViewController.swift in Sources */,
+				81EEBEEB220FFEA800F76A43 /* MemberModel.swift in Sources */,
 				0473DCCC2204FE3600141FB6 /* AppDelegate.swift in Sources */,
 				81255CAE220572E30025D549 /* V2WebViewProgressView.swift in Sources */,
 				81255CBB22057BFC0025D549 /* NodeModel.swift in Sources */,
 				044565212206E4CB00DF46E7 /* SVProgressHUD+Extension.swift in Sources */,
+				81EEBEDA220FEA4100F76A43 /* RightNodeTableViewCell.swift in Sources */,
 				81255C96220529D70025D549 /* V2EXSettings.swift in Sources */,
 				81255CBF22058A5C0025D549 /* V2User.swift in Sources */,
+				81EEBEDE220FED8A00F76A43 /* V2SpacingLabel.swift in Sources */,
 				81255CA8220570870025D549 /* UITableView+Extension.swift in Sources */,
 				81DF14D12206921C008DFEC9 /* WebViewImageProtocol.swift in Sources */,
 			);

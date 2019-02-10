@@ -1,9 +1,9 @@
 //
 //  V2EXTargetType.swift
-//  swift_exercise
+//  V2ex-Swift
 //
-//  Created by mac on 2019/2/3.
-//  Copyright © 2019 mac. All rights reserved.
+//  Created by huangfeng on 2017/5/24.
+//  Copyright © 2017年 Fin. All rights reserved.
 //
 
 import UIKit
@@ -14,15 +14,14 @@ import Result
 //保存全局Providers
 fileprivate var retainProviders:[String: Any] = [:]
 
-protocol V2EXTargetType : TargetType {
+protocol V2EXTargetType: TargetType {
     var parameters: [String: Any]? { get }
 }
 
 extension V2EXTargetType {
-    var headers: [String: String]? {
+    var headers: [String : String]? {
         return MOBILE_CLIENT_HEADERS
     }
-    
     var baseURL: URL {
         return URL(string: "https://www.v2ex.com")!
     }
@@ -48,7 +47,7 @@ extension V2EXTargetType {
             //默认参数
             var defaultParameters:[String:Any] = [:]
             //协议参数
-            if  let parameters = self.parameters {
+            if let parameters = self.parameters {
                 for (key, value) in parameters {
                     defaultParameters[key] = value
                 }
@@ -68,20 +67,19 @@ extension V2EXTargetType {
         }
     }
     
-    //实现此协议类，将自动获得用该实例化的 provider 对象
-    static var provider: RxSwift.Reactive<MoyaProvider<Self>> {
+    /// 实现此协议的类，将自动获得用该类实例化的 provider 对象
+    static var provider: RxSwift.Reactive< MoyaProvider<Self> > {
         let key = "\(Self.self)"
-        if let provider = retainProviders[key] as? RxSwift.Reactive< MoyaProvider<Self>> {
+        if let provider = retainProviders[key] as? RxSwift.Reactive< MoyaProvider<Self> > {
             return provider
         }
         let provider = Self.weakProvider
         retainProviders[key] = provider
-        
         return provider
     }
     
-    /// 不被全局持有的 Provider，使用时，需要持有它，否则将立即释放，请求随即终止
-    static var weakProvider: RxSwift.Reactive<MoyaProvider<Self>> {
+    /// 不被全局持有的 Provider ，使用时，需要持有它，否则将立即释放，请求随即终止
+    static var weakProvider: RxSwift.Reactive< MoyaProvider<Self> > {
         var plugins:[PluginType] = [networkActivityPlugin]
         #if DEBUG
         plugins.append(LogPlugin())
@@ -97,21 +95,22 @@ extension RxSwift.Reactive where Base: MoyaProviderType {
     }
 }
 
-fileprivate class LogPlugin: PluginType {
+fileprivate class LogPlugin: PluginType{
     func willSend(_ request: RequestType, target: TargetType) {
-        print("\n----------------\n准备请求：\(target.path)")
-        print("请求方式：\(target.method.rawValue)")
+        print("\n-------------------\n准备请求: \(target.path)")
+        print("请求方式: \(target.method.rawValue)")
         if let params = (target as? V2EXTargetType)?.parameters {
             print(params)
         }
         print("\n")
+        
     }
-    
     func didReceive(_ result: Result<Response, MoyaError>, target: TargetType) {
-        print("\n------------\n请求结束：\(target.path)")
+        print("\n-------------------\n请求结束: \(target.path)")
         if let data = result.value?.data, let resutl = String(data: data, encoding: String.Encoding.utf8) {
-            print("请求结果：\(resutl)")
+            print("请求结果: \(resutl)")
         }
         print("\n")
     }
 }
+

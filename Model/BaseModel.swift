@@ -1,9 +1,9 @@
 //
 //  BaseModel.swift
-//  swift_exercise
+//  V2ex-Swift
 //
-//  Created by mac on 2019/2/4.
-//  Copyright © 2019 mac. All rights reserved.
+//  Created by huangfeng on 1/13/16.
+//  Copyright © 2016 Fin. All rights reserved.
 //
 
 import UIKit
@@ -16,13 +16,13 @@ class BaseJsonModel: Mappable {
     required init?(map: Map) {
         
     }
-    
     func mapping(map: Map) {
-
+        
     }
 }
 
-protocol BaseHtmlModelProtocel {
+
+protocol BaseHtmlModelProtocol {
     init(rootNode:JiNode)
 }
 
@@ -35,3 +35,4 @@ protocol HtmlModelArrayProtocol {
 protocol HtmlModelProtocol {
     static func createModel(ji:Ji) -> Any
 }
+
