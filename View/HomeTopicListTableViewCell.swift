@@ -235,7 +235,7 @@ class HomeTopicListTableViewCell: UITableViewCell {
         }
         
         if let avata = model.avata {
-            self.avatarImageView.find_setImagWithUrl(URL(string: "https:" + avata)!, placeholderImage: nil, imageModificationClosure: fin_defaultImageModification())
+            self.avatarImageView.fin_setImageWithUrl(URL(string: "https:" + avata)!, placeholderImage: nil, imageModificationClosure: fin_defaultImageModification())
         }
         self.replyCountLabel.text = model.replies
         
