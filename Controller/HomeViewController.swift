@@ -8,6 +8,8 @@
 
 import UIKit
 
+import SnapKit
+
 class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
