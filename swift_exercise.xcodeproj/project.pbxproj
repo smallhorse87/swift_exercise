@@ -71,6 +71,9 @@
 		81EEBEEB220FFEA800F76A43 /* MemberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EEBEEA220FFEA800F76A43 /* MemberModel.swift */; };
 		81EEBEED220FFED400F76A43 /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EEBEEC220FFED400F76A43 /* UserApi.swift */; };
 		81EEBEEF22100C3C00F76A43 /* PodCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EEBEEE22100C3C00F76A43 /* PodCellTableViewCell.swift */; };
+		81EEBEF222100DF500F76A43 /* FontSizeSliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EEBEF122100DF500F76A43 /* FontSizeSliderTableViewCell.swift */; };
+		81EEBEF422100F2900F76A43 /* V2Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EEBEF322100F2900F76A43 /* V2Slider.swift */; };
+		81EEBEF6221010F900F76A43 /* FontDisplayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EEBEF5221010F900F76A43 /* FontDisplayTableViewCell.swift */; };
 		8DBAC6BB0489635EE900D81D /* Pods_swift_exercise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B584EA9FADFCF6332E76B2CB /* Pods_swift_exercise.framework */; };
 /* End PBXBuildFile section */
 
@@ -163,6 +166,9 @@
 		81EEBEEA220FFEA800F76A43 /* MemberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberModel.swift; sourceTree = "<group>"; };
 		81EEBEEC220FFED400F76A43 /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
 		81EEBEEE22100C3C00F76A43 /* PodCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodCellTableViewCell.swift; sourceTree = "<group>"; };
+		81EEBEF122100DF500F76A43 /* FontSizeSliderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSizeSliderTableViewCell.swift; sourceTree = "<group>"; };
+		81EEBEF322100F2900F76A43 /* V2Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2Slider.swift; sourceTree = "<group>"; };
+		81EEBEF5221010F900F76A43 /* FontDisplayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontDisplayTableViewCell.swift; sourceTree = "<group>"; };
 		AA752189752788F369072082 /* Pods-swift_exercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift_exercise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift_exercise/Pods-swift_exercise.debug.xcconfig"; sourceTree = "<group>"; };
 		B584EA9FADFCF6332E76B2CB /* Pods_swift_exercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_exercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -387,6 +393,7 @@
 		81BC50DA220FC15B00424215 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				81EEBEF022100DDC00F76A43 /* More */,
 				81EEBEE1220FEDA600F76A43 /* Control */,
 				81BC50DB220FC19600424215 /* HomeTopicListTableViewCell.swift */,
 				81BC50DD220FD9B400424215 /* BaseDetailTableViewCell.swift */,
@@ -403,8 +410,18 @@
 			children = (
 				81EEBEDD220FED8A00F76A43 /* V2SpacingLabel.swift */,
 				81EEBEE2220FFCD400F76A43 /* UIButton+Extension.swift */,
+				81EEBEF322100F2900F76A43 /* V2Slider.swift */,
 			);
 			path = Control;
+			sourceTree = "<group>";
+		};
+		81EEBEF022100DDC00F76A43 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				81EEBEF122100DF500F76A43 /* FontSizeSliderTableViewCell.swift */,
+				81EEBEF5221010F900F76A43 /* FontDisplayTableViewCell.swift */,
+			);
+			path = More;
 			sourceTree = "<group>";
 		};
 		86A976BAFD67C957C8098579 /* Pods */ = {
@@ -665,11 +682,13 @@
 				81255CC122058AF30025D549 /* UserModel.swift in Sources */,
 				81255CA2220560410025D549 /* V2UsersKeychain.swift in Sources */,
 				04F886C12207B1E7002AD137 /* BaseModel.swift in Sources */,
+				81EEBEF422100F2900F76A43 /* V2Slider.swift in Sources */,
 				81BC50DE220FD9B400424215 /* BaseDetailTableViewCell.swift in Sources */,
 				81255CAB220572430025D549 /* V2WebViewViewController.swift in Sources */,
 				81EEBEED220FFED400F76A43 /* UserApi.swift in Sources */,
 				81255CC3220594480025D549 /* Request+Extension.swift in Sources */,
 				81EEBEE3220FFCD400F76A43 /* UIButton+Extension.swift in Sources */,
+				81EEBEF222100DF500F76A43 /* FontSizeSliderTableViewCell.swift in Sources */,
 				0473DCCE2204FE3600141FB6 /* ViewController.swift in Sources */,
 				81255C9C220547320025D549 /* V2Client.swift in Sources */,
 				81255CA422056CF40025D549 /* AnalyzeURLHelper.swift in Sources */,
@@ -688,6 +707,7 @@
 				81255C96220529D70025D549 /* V2EXSettings.swift in Sources */,
 				81255CBF22058A5C0025D549 /* V2User.swift in Sources */,
 				81EEBEDE220FED8A00F76A43 /* V2SpacingLabel.swift in Sources */,
+				81EEBEF6221010F900F76A43 /* FontDisplayTableViewCell.swift in Sources */,
 				81255CA8220570870025D549 /* UITableView+Extension.swift in Sources */,
 				81DF14D12206921C008DFEC9 /* WebViewImageProtocol.swift in Sources */,
 				81EEBEEF22100C3C00F76A43 /* PodCellTableViewCell.swift in Sources */,
