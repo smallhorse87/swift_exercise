@@ -74,6 +74,8 @@
 		81EEBEF222100DF500F76A43 /* FontSizeSliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EEBEF122100DF500F76A43 /* FontSizeSliderTableViewCell.swift */; };
 		81EEBEF422100F2900F76A43 /* V2Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EEBEF322100F2900F76A43 /* V2Slider.swift */; };
 		81EEBEF6221010F900F76A43 /* FontDisplayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EEBEF5221010F900F76A43 /* FontDisplayTableViewCell.swift */; };
+		81EEBEF92210125800F76A43 /* NodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EEBEF82210125800F76A43 /* NodeTableViewCell.swift */; };
+		81EEBEFB221013D800F76A43 /* NodeCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81EEBEFA221013D800F76A43 /* NodeCollectionReusableView.swift */; };
 		8DBAC6BB0489635EE900D81D /* Pods_swift_exercise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B584EA9FADFCF6332E76B2CB /* Pods_swift_exercise.framework */; };
 /* End PBXBuildFile section */
 
@@ -169,6 +171,8 @@
 		81EEBEF122100DF500F76A43 /* FontSizeSliderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSizeSliderTableViewCell.swift; sourceTree = "<group>"; };
 		81EEBEF322100F2900F76A43 /* V2Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2Slider.swift; sourceTree = "<group>"; };
 		81EEBEF5221010F900F76A43 /* FontDisplayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontDisplayTableViewCell.swift; sourceTree = "<group>"; };
+		81EEBEF82210125800F76A43 /* NodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeTableViewCell.swift; sourceTree = "<group>"; };
+		81EEBEFA221013D800F76A43 /* NodeCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeCollectionReusableView.swift; sourceTree = "<group>"; };
 		AA752189752788F369072082 /* Pods-swift_exercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift_exercise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift_exercise/Pods-swift_exercise.debug.xcconfig"; sourceTree = "<group>"; };
 		B584EA9FADFCF6332E76B2CB /* Pods_swift_exercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_exercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -393,6 +397,7 @@
 		81BC50DA220FC15B00424215 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				81EEBEF7221011FC00F76A43 /* Node */,
 				81EEBEF022100DDC00F76A43 /* More */,
 				81EEBEE1220FEDA600F76A43 /* Control */,
 				81BC50DB220FC19600424215 /* HomeTopicListTableViewCell.swift */,
@@ -422,6 +427,15 @@
 				81EEBEF5221010F900F76A43 /* FontDisplayTableViewCell.swift */,
 			);
 			path = More;
+			sourceTree = "<group>";
+		};
+		81EEBEF7221011FC00F76A43 /* Node */ = {
+			isa = PBXGroup;
+			children = (
+				81EEBEF82210125800F76A43 /* NodeTableViewCell.swift */,
+				81EEBEFA221013D800F76A43 /* NodeCollectionReusableView.swift */,
+			);
+			path = Node;
 			sourceTree = "<group>";
 		};
 		86A976BAFD67C957C8098579 /* Pods */ = {
@@ -687,6 +701,7 @@
 				81255CAB220572430025D549 /* V2WebViewViewController.swift in Sources */,
 				81EEBEED220FFED400F76A43 /* UserApi.swift in Sources */,
 				81255CC3220594480025D549 /* Request+Extension.swift in Sources */,
+				81EEBEF92210125800F76A43 /* NodeTableViewCell.swift in Sources */,
 				81EEBEE3220FFCD400F76A43 /* UIButton+Extension.swift in Sources */,
 				81EEBEF222100DF500F76A43 /* FontSizeSliderTableViewCell.swift in Sources */,
 				0473DCCE2204FE3600141FB6 /* ViewController.swift in Sources */,
@@ -705,6 +720,7 @@
 				044565212206E4CB00DF46E7 /* SVProgressHUD+Extension.swift in Sources */,
 				81EEBEDA220FEA4100F76A43 /* RightNodeTableViewCell.swift in Sources */,
 				81255C96220529D70025D549 /* V2EXSettings.swift in Sources */,
+				81EEBEFB221013D800F76A43 /* NodeCollectionReusableView.swift in Sources */,
 				81255CBF22058A5C0025D549 /* V2User.swift in Sources */,
 				81EEBEDE220FED8A00F76A43 /* V2SpacingLabel.swift in Sources */,
 				81EEBEF6221010F900F76A43 /* FontDisplayTableViewCell.swift in Sources */,
