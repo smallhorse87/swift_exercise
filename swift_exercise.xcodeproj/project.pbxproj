@@ -431,11 +431,11 @@
 		81BC50DA220FC15B00424215 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				81EEBEE1220FEDA600F76A43 /* Control */,
 				81EEBF172210172600F76A43 /* Member */,
 				81EEBEFC221014FC00F76A43 /* Topic */,
 				81EEBEF7221011FC00F76A43 /* Node */,
 				81EEBEF022100DDC00F76A43 /* More */,
-				81EEBEE1220FEDA600F76A43 /* Control */,
 				81BC50DB220FC19600424215 /* HomeTopicListTableViewCell.swift */,
 				81BC50DD220FD9B400424215 /* BaseDetailTableViewCell.swift */,
 				81EEBED7220FE65100F76A43 /* LeftNodeTableViewCell.swift */,

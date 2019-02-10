@@ -9,6 +9,25 @@
 import UIKit
 
 class V2SpacingLabel: UILabel {
+    var spacing : CGFloat = 3.0
+    override var text: String?{
+        set {
+            if let len = newValue?.Lenght, len > 0 {
+                let attributedString = NSMutableAttributedString(string: newValue!)
+                let paragraphStyle = NSMutableParagraphStyle()
+                paragraphStyle.lineBreakMode = NSLineBreakMode.byTruncatingHead
+                paragraphStyle.lineSpacing=self.spacing
+                paragraphStyle.alignment=self.textAlignment
+                attributedString.addAttributes([
+                    NSAttributedStringKey.paragraphStyle:paragraphStyle
+                    ], range: NSMakeRange(0, newValue!.Lenght))
+                super.attributedText = attributedString
+            }
+        }
+        get {
+            return super.text
+        }
+    }
 
     /*
     // Only override draw() if you perform custom drawing.
