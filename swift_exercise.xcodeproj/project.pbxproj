@@ -299,7 +299,6 @@
 			isa = PBXGroup;
 			children = (
 				81BC50DA220FC15B00424215 /* View */,
-				81255CB922057BEA0025D549 /* Model */,
 				81255CA9220572340025D549 /* Controller */,
 				044565162205029C00DF46E7 /* Common */,
 				04456506220501D100DF46E7 /* Resources */,
@@ -404,6 +403,7 @@
 		81255CA9220572340025D549 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				81255CB922057BEA0025D549 /* Model */,
 				81255CAA220572430025D549 /* V2WebViewViewController.swift */,
 				81255CB1220577940025D549 /* HomeViewController.swift */,
 				81255CB5220579220025D549 /* MemberViewController.swift */,
