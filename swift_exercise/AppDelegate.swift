@@ -29,16 +29,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.makeKeyAndVisible()
         
         let centerNav = V2EXNavigationController(rootViewController: HomeViewController())
-        let leftViewController = HomeViewController();//LeftViewController()
-        let rightViewController = HomeViewController();//RightViewController()
-        let drawerController = DrawerController(centerViewController: centerNav, leftDrawerViewController: centerNav, rightDrawerViewController:centerNav)
+        let leftViewController = LeftViewController()
+        let rightViewController = RightViewController()
+        let drawerController = DrawerController(centerViewController: centerNav, leftDrawerViewController: leftViewController, rightDrawerViewController:rightViewController)
         
         self.window?.themeChnagedHandler = { [weak self] (style) -> Void in
             self?.window?.backgroundColor = V2EXColor.colors.v2_backgroundColor
         }
         
         drawerController.maximumLeftDrawerWidth=230
-//        drawerController.maximumRightDrawerWidth = rightViewController.maxim
+        drawerController.maximumRightDrawerWidth = rightViewController.maximumRightDrawerWidth()
         drawerController.openDrawerGestureModeMask = OpenDrawerGestureMode.panningCenterView
         drawerController.closeDrawerGestureModeMask = CloseDrawerGestureMode.all
         self.window?.rootViewController = drawerController
