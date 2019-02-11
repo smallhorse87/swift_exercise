@@ -42,8 +42,6 @@
 		81255CA422056CF40025D549 /* AnalyzeURLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255CA322056CF40025D549 /* AnalyzeURLHelper.swift */; };
 		81255CA8220570870025D549 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255CA7220570870025D549 /* UITableView+Extension.swift */; };
 		81255CAB220572430025D549 /* V2WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255CAA220572430025D549 /* V2WebViewViewController.swift */; };
-		81255CAE220572E30025D549 /* V2WebViewProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255CAD220572E30025D549 /* V2WebViewProgressView.swift */; };
-		81255CB0220573610025D549 /* V2ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255CAF220573610025D549 /* V2ActivityViewController.swift */; };
 		81255CB2220577940025D549 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255CB1220577940025D549 /* HomeViewController.swift */; };
 		81255CB4220577DA0025D549 /* V2EXNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255CB3220577DA0025D549 /* V2EXNavigationController.swift */; };
 		81255CB6220579220025D549 /* MemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255CB5220579220025D549 /* MemberViewController.swift */; };
@@ -53,6 +51,14 @@
 		81255CBF22058A5C0025D549 /* V2User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255CBE22058A5C0025D549 /* V2User.swift */; };
 		81255CC122058AF30025D549 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255CC022058AF30025D549 /* UserModel.swift */; };
 		81255CC3220594480025D549 /* Request+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255CC2220594480025D549 /* Request+Extension.swift */; };
+		81701795221107DC006B8494 /* V2FPSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81701794221107DC006B8494 /* V2FPSLabel.swift */; };
+		8170179722110A43006B8494 /* V2RefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8170179622110A43006B8494 /* V2RefreshHeader.swift */; };
+		8170179922110F42006B8494 /* V2RefreshFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8170179822110F42006B8494 /* V2RefreshFooter.swift */; };
+		8170179B2211124C006B8494 /* V2LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8170179A2211124C006B8494 /* V2LoadingView.swift */; };
+		8170179D2211146D006B8494 /* NotificationMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8170179C2211146D006B8494 /* NotificationMenuButton.swift */; };
+		8170179F22111AE7006B8494 /* V2ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8170179E22111AE7006B8494 /* V2ActivityViewController.swift */; };
+		817017A1221130BE006B8494 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817017A0221130BE006B8494 /* UIView+Extension.swift */; };
+		817017A4221133B3006B8494 /* V2WebViewProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817017A3221133B3006B8494 /* V2WebViewProgressView.swift */; };
 		81BC50DC220FC19600424215 /* HomeTopicListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BC50DB220FC19600424215 /* HomeTopicListTableViewCell.swift */; };
 		81BC50DE220FD9B400424215 /* BaseDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BC50DD220FD9B400424215 /* BaseDetailTableViewCell.swift */; };
 		81DF14CD22068B26008DFEC9 /* V2ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DF14CC22068B26008DFEC9 /* V2ProgressHUD.swift */; };
@@ -156,8 +162,6 @@
 		81255CA322056CF40025D549 /* AnalyzeURLHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeURLHelper.swift; sourceTree = "<group>"; };
 		81255CA7220570870025D549 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		81255CAA220572430025D549 /* V2WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2WebViewViewController.swift; sourceTree = "<group>"; };
-		81255CAD220572E30025D549 /* V2WebViewProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2WebViewProgressView.swift; sourceTree = "<group>"; };
-		81255CAF220573610025D549 /* V2ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2ActivityViewController.swift; sourceTree = "<group>"; };
 		81255CB1220577940025D549 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		81255CB3220577DA0025D549 /* V2EXNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2EXNavigationController.swift; sourceTree = "<group>"; };
 		81255CB5220579220025D549 /* MemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberViewController.swift; sourceTree = "<group>"; };
@@ -167,6 +171,14 @@
 		81255CBE22058A5C0025D549 /* V2User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2User.swift; sourceTree = "<group>"; };
 		81255CC022058AF30025D549 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		81255CC2220594480025D549 /* Request+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Request+Extension.swift"; sourceTree = "<group>"; };
+		81701794221107DC006B8494 /* V2FPSLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2FPSLabel.swift; sourceTree = "<group>"; };
+		8170179622110A43006B8494 /* V2RefreshHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2RefreshHeader.swift; sourceTree = "<group>"; };
+		8170179822110F42006B8494 /* V2RefreshFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2RefreshFooter.swift; sourceTree = "<group>"; };
+		8170179A2211124C006B8494 /* V2LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2LoadingView.swift; sourceTree = "<group>"; };
+		8170179C2211146D006B8494 /* NotificationMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationMenuButton.swift; sourceTree = "<group>"; };
+		8170179E22111AE7006B8494 /* V2ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2ActivityViewController.swift; sourceTree = "<group>"; };
+		817017A0221130BE006B8494 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		817017A3221133B3006B8494 /* V2WebViewProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2WebViewProgressView.swift; sourceTree = "<group>"; };
 		81BC50DB220FC19600424215 /* HomeTopicListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopicListTableViewCell.swift; sourceTree = "<group>"; };
 		81BC50DD220FD9B400424215 /* BaseDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDetailTableViewCell.swift; sourceTree = "<group>"; };
 		81DF14CC22068B26008DFEC9 /* V2ProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2ProgressHUD.swift; sourceTree = "<group>"; };
@@ -376,6 +388,7 @@
 				0445651E2206DD7700DF46E7 /* UIImageView+Extension.swift */,
 				81255CA7220570870025D549 /* UITableView+Extension.swift */,
 				044565202206E4CB00DF46E7 /* SVProgressHUD+Extension.swift */,
+				817017A0221130BE006B8494 /* UIView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -391,23 +404,13 @@
 		81255CA9220572340025D549 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				81255CAC220572D30025D549 /* V2WebViewProgress */,
 				81255CAA220572430025D549 /* V2WebViewViewController.swift */,
-				81255CAF220573610025D549 /* V2ActivityViewController.swift */,
 				81255CB1220577940025D549 /* HomeViewController.swift */,
 				81255CB5220579220025D549 /* MemberViewController.swift */,
 				81255CB722057A9C0025D549 /* TopicDetailViewController.swift */,
 				81255CBC22057C460025D549 /* NodeTopicListViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		81255CAC220572D30025D549 /* V2WebViewProgress */ = {
-			isa = PBXGroup;
-			children = (
-				81255CAD220572E30025D549 /* V2WebViewProgressView.swift */,
-			);
-			path = V2WebViewProgress;
 			sourceTree = "<group>";
 		};
 		81255CB922057BEA0025D549 /* Model */ = {
@@ -426,6 +429,14 @@
 				81EEBEEC220FFED400F76A43 /* UserApi.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		817017A2221133A1006B8494 /* V2WebViewProgress */ = {
+			isa = PBXGroup;
+			children = (
+				817017A3221133B3006B8494 /* V2WebViewProgressView.swift */,
+			);
+			path = V2WebViewProgress;
 			sourceTree = "<group>";
 		};
 		81BC50DA220FC15B00424215 /* View */ = {
@@ -449,9 +460,16 @@
 		81EEBEE1220FEDA600F76A43 /* Control */ = {
 			isa = PBXGroup;
 			children = (
+				817017A2221133A1006B8494 /* V2WebViewProgress */,
 				81EEBF062210168100F76A43 /* V2PhotoBrowser */,
 				81EEBEDD220FED8A00F76A43 /* V2SpacingLabel.swift */,
+				81701794221107DC006B8494 /* V2FPSLabel.swift */,
+				8170179622110A43006B8494 /* V2RefreshHeader.swift */,
+				8170179822110F42006B8494 /* V2RefreshFooter.swift */,
+				8170179A2211124C006B8494 /* V2LoadingView.swift */,
 				81EEBEE2220FFCD400F76A43 /* UIButton+Extension.swift */,
+				8170179C2211146D006B8494 /* NotificationMenuButton.swift */,
+				8170179E22111AE7006B8494 /* V2ActivityViewController.swift */,
 				81EEBEF322100F2900F76A43 /* V2Slider.swift */,
 				81EEBF15221016FF00F76A43 /* INSImageView.swift */,
 			);
@@ -754,11 +772,12 @@
 				81EEBED8220FE65100F76A43 /* LeftNodeTableViewCell.swift in Sources */,
 				81255C982205398D0025D549 /* V2Style.swift in Sources */,
 				81255C9A220543970025D549 /* V2ex+Defines.swift in Sources */,
-				81255CB0220573610025D549 /* V2ActivityViewController.swift in Sources */,
 				81EEBF002210155500F76A43 /* TopicDetailWebViewContentCell.swift in Sources */,
 				81DF14CF22068EDE008DFEC9 /* V2LeftAlignedCollectionViewFlowLayout.swift in Sources */,
 				81BC50DC220FC19600424215 /* HomeTopicListTableViewCell.swift in Sources */,
+				8170179B2211124C006B8494 /* V2LoadingView.swift in Sources */,
 				81255CA022055DE40025D549 /* V2EXMentionedBindingParser.swift in Sources */,
+				8170179D2211146D006B8494 /* NotificationMenuButton.swift in Sources */,
 				81DF14CD22068B26008DFEC9 /* V2ProgressHUD.swift in Sources */,
 				81DF14D5220699B7008DFEC9 /* V2HitTestSlopButton.swift in Sources */,
 				81EEBEE5220FFE0800F76A43 /* NotificationsModel.swift in Sources */,
@@ -768,6 +787,7 @@
 				81EEBF192210175D00F76A43 /* MemberHeaderCell.swift in Sources */,
 				04F886BD2207152E002AD137 /* V2EXTargetType.swift in Sources */,
 				04F886BF22072118002AD137 /* Observable+Extension.swift in Sources */,
+				8170179922110F42006B8494 /* V2RefreshFooter.swift in Sources */,
 				81EEBEE7220FFE5900F76A43 /* TopicCommentModel.swift in Sources */,
 				81255CB822057A9C0025D549 /* TopicDetailViewController.swift in Sources */,
 				81EEBF0F2210168100F76A43 /* V2PhotoBrowser.swift in Sources */,
@@ -782,6 +802,7 @@
 				81255CAB220572430025D549 /* V2WebViewViewController.swift in Sources */,
 				81EEBF1F221017A100F76A43 /* AccountListTableViewCell.swift in Sources */,
 				81EEBEED220FFED400F76A43 /* UserApi.swift in Sources */,
+				817017A4221133B3006B8494 /* V2WebViewProgressView.swift in Sources */,
 				81255CC3220594480025D549 /* Request+Extension.swift in Sources */,
 				81EEBEF92210125800F76A43 /* NodeTableViewCell.swift in Sources */,
 				81EEBEE3220FFCD400F76A43 /* UIButton+Extension.swift in Sources */,
@@ -802,20 +823,23 @@
 				81EEBEEB220FFEA800F76A43 /* MemberModel.swift in Sources */,
 				0473DCCC2204FE3600141FB6 /* AppDelegate.swift in Sources */,
 				81EEBF132210168100F76A43 /* V2TapDetectingImageView.swift in Sources */,
-				81255CAE220572E30025D549 /* V2WebViewProgressView.swift in Sources */,
 				81255CBB22057BFC0025D549 /* NodeModel.swift in Sources */,
 				044565212206E4CB00DF46E7 /* SVProgressHUD+Extension.swift in Sources */,
 				81EEBF1D2210178900F76A43 /* MemberReplyCell.swift in Sources */,
 				81EEBF142210168100F76A43 /* V2ZoomingScrollView.swift in Sources */,
 				81EEBEDA220FEA4100F76A43 /* RightNodeTableViewCell.swift in Sources */,
+				81701795221107DC006B8494 /* V2FPSLabel.swift in Sources */,
 				81255C96220529D70025D549 /* V2EXSettings.swift in Sources */,
 				81EEBEFB221013D800F76A43 /* NodeCollectionReusableView.swift in Sources */,
+				817017A1221130BE006B8494 /* UIView+Extension.swift in Sources */,
 				81EEBEFE2210152000F76A43 /* TopicDetailHeaderCell.swift in Sources */,
 				81255CBF22058A5C0025D549 /* V2User.swift in Sources */,
 				81EEBEDE220FED8A00F76A43 /* V2SpacingLabel.swift in Sources */,
 				81EEBEF6221010F900F76A43 /* FontDisplayTableViewCell.swift in Sources */,
+				8170179F22111AE7006B8494 /* V2ActivityViewController.swift in Sources */,
 				81EEBF122210168100F76A43 /* V2PhotoBrowserTransionPresent.swift in Sources */,
 				81255CA8220570870025D549 /* UITableView+Extension.swift in Sources */,
+				8170179722110A43006B8494 /* V2RefreshHeader.swift in Sources */,
 				81DF14D12206921C008DFEC9 /* WebViewImageProtocol.swift in Sources */,
 				81EEBF102210168100F76A43 /* V2PhotoBrowserSwipeInteractiveTransition.swift in Sources */,
 				81EEBEEF22100C3C00F76A43 /* PodCellTableViewCell.swift in Sources */,
