@@ -26,7 +26,7 @@ class PodCellTableViewCell: BaseDetailTableViewCell{
         self.setupLayout()
     }
     
-    //stony fatalError是个什么函数
+    //stony study fatalError是个什么函数
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

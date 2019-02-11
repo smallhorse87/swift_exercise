@@ -36,7 +36,7 @@ class HomeTopicListTableViewCell: UITableViewCell {
         label.font = v2Font(14)
         return label
     }()
-    ///stony 这是个什么语法？
+    ///stony study  {}() 这是个什么语法？
     
     /// 日期 和 最后发送人
     var dateAndLastPostUserLabel: UILabel = {
@@ -106,7 +106,7 @@ class HomeTopicListTableViewCell: UITableViewCell {
         
         self.setupLayout()
         
-        //stony [weak self] 这是个什么用法
+        //stony study [weak self] 这是个什么用法
         self.themeChnagedHandler = { [weak self] (style) -> Void in
             if style == V2EXColor.V2EXColorStyleDefault {
                 self?.nodeBackgroundImageView.image = HomeTopicListTableViewCell.nodeBackgroundImage_Default
@@ -135,16 +135,16 @@ class HomeTopicListTableViewCell: UITableViewCell {
         //点击用户头像，跳转到用户主页
         self.avatarImageView.isUserInteractionEnabled = true
         self.userNameLabel.isUserInteractionEnabled   = true
-        //stony Any指的是什么 #selector是什么
+        //stony study Any指的是什么 #selector是什么
         var userNameTap = UITapGestureRecognizer(target: self, action: #selector(HomeTopicListTableViewCell.userNameTap(_:)))
         self.avatarImageView.addGestureRecognizer(userNameTap)
         userNameTap = UITapGestureRecognizer(target: self, action: #selector(HomeTopicListTableViewCell.userNameTap(_:)))
         self.userNameLabel.addGestureRecognizer(userNameTap)
     }
 
-    //stony snapkit 和 Mansory的关系
+    //stony study snapkit 和 Mansory的关系
     fileprivate func setupLayout(){
-        //stony 头文件关系，为什么放到了HomeViewController后，snapkit就可以使用了？
+        //stony study 头文件关系，为什么放到了HomeViewController后，snapkit就可以使用了？
         self.contentPanel.snp.makeConstraints{ (make) -> Void in
             make.top.left.right.equalTo(self.contentView);
         }
@@ -200,7 +200,7 @@ class HomeTopicListTableViewCell: UITableViewCell {
         }
     }
     
-    //stony @objc是什么
+    //stony study @objc是什么
     @objc func userNameTap(_ sender:UITapGestureRecognizer) {
         if let _ = self.itemModel, let username = itemModel?.userName {
 

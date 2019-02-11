@@ -113,7 +113,7 @@ class V2ActivityViewController: UIViewController, UIViewControllerTransitioningD
             make.height.equalTo(45)
         }
         
-        //stony UIControlState()
+        //stony study UIControlState()
         let cancelButton = UIButton()
         cancelButton.setTitle(NSLocalizedString("cancel2"), for: UIControlState())
         cancelButton.titleLabel?.font = v2Font(18)
@@ -123,7 +123,7 @@ class V2ActivityViewController: UIViewController, UIViewControllerTransitioningD
             make.left.top.right.bottom.equalTo(cancelPanel)
         }
         
-        //stony (dismiss as () -> Void)
+        //stony study (dismiss as () -> Void)
         cancelButton.addTarget(self, action: #selector(dismiss as () -> Void), for: .touchUpInside)
         
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(dismiss as () -> Void)))

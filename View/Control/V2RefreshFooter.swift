@@ -50,7 +50,7 @@ class V2RefreshFooter: MJRefreshAutoFooter {
         }
     }
     
-    //stony xcode里的文档化
+    //stony study xcode里的文档化
     /**
      初始化工作
      */

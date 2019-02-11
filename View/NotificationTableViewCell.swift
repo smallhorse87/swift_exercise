@@ -65,7 +65,7 @@ class NotificationTableViewCell: UITableViewCell {
         return view
     }()
     
-    //stony 什么是 lazy
+    //stony study 什么是 lazy
     lazy var dropUpImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage.imageUsedTemplateMode("ic_arrow_drop_up")
@@ -89,7 +89,7 @@ class NotificationTableViewCell: UITableViewCell {
         return button
     }()
     
-    //stony swift也有weak
+    //stony study swift也有weak
     weak var itemModel:NotificationsModel?
     
     /// 点击回复按钮，调用的事件
