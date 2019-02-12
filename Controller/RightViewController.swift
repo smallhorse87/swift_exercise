@@ -54,12 +54,91 @@ class RightViewController: UIViewController,UITableViewDataSource,UITableViewDel
         super.viewDidLoad()
         self.view.backgroundColor = V2EXColor.colors.v2_backgroundColor
         
-        var currentTab = V2EXSettings.sharedInstance
+        var currentTab = V2EXSettings.sharedInstance[kHomeTab]
+        if currentTab == nil {
+            currentTab = "all"
+        }
+        self.currentSelectedTabIndex = rightNodes.index{ $0.nodeTab == currentTab}!
+        
+        self.backgroundImageView = UIImageView()
+        self.backgroundImageView!.frame = self.view.frame
+        self.backgroundImageView!.contentMode = .left
+        view.addSubview(self.backgroundImageView!)
+        
+        frostedView.underlyingView = self.backgroundImageView!
+        frostedView.isDynamic = false
+        frostedView.frame = self.view.frame
+        frostedView.tintColor = UIColor.black
+        self.view.addSubview(frostedView)
+        
+        self.view.addSubview(self.tableView)
+        self.tableView.snp.makeConstraints { (make) in
+            make.top.right.bottom.left.equalTo(self.view)
+        }
+        self.themeChnagedHandler = {[weak self] (style) -> Void in
+            if V2EXColor.sharedInstance.style == V2EXColor.V2EXColorStyleDefault {
+                self?.backgroundImageView?.image = UIImage(named: "32.jpg")
+            }
+            else {
+                self?.backgroundImageView?.image = UIImage(named: "12.jpg")
+            }
+            self?.frostedView.updateAsynchronously(true, completion: nil)
+        }
+        
+        let rowHeight = self.tableView(self.tableView, heightForRowAt: IndexPath(row: 0, section: 0))
+        let rowCount = self.tableView(self.tableView, numberOfRowsInSection: 0)
+        var paddingTop = (SCREEN_HEIGHT - CGFloat(rowCount) * rowHeight ) / 2
+        if paddingTop <= 0 {
+            paddingTop = 20
+        }
+
+        self.tableView.contentInset = UIEdgeInsetsMake(paddingTop, 0, 0, 0)
+        
         // Do any additional setup after loading the view.
     }
     
     func maximumRightDrawerWidth() -> CGFloat{
+        
+        let cell = RightNodeTableViewCell()
+        let cellFont = UIFont(name: cell.nodeNameLabel.font.familyName, size: cell.nodeNameLabel.font.pointSize)
+        for node in rightNodes {
+            let size = node.nodeName!.boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: CGFloat(MAXFLOAT)),
+                                                   options: NSStringDrawingOptions.usesLineFragmentOrigin,
+                                                   attributes: [NSAttributedStringKey(rawValue: "NSFontAttributeName"):cellFont!],
+                                                   context: nil)
+            let width = size.width + 50
+            if width > 100 {
+                return width
+            }
+        }
+        
         return 100
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return rightNodes.count;
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 48
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = getCell(tableView, cell: RightNodeTableViewCell.self, indexPath: indexPath)
+        cell.nodeNameLabel.text = self.rightNodes[indexPath.row].nodeName
+        
+        if indexPath.row == self.currentSelectedTabIndex && cell.isSelected == false {
+            self.tableView.selectRow(at: indexPath, animated: false, scrollPosition: .middle)
+        }
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let node = self.rightNodes[indexPath.row]
+        V2Client.sharedInstance.centerViewController?.tab = node.nodeTab
+        V2Client.sharedInstance.centerViewController?.refreshPage()
+        V2Client.sharedInstance.drawerController?.closeDrawer(animated: true, completion: nil)
     }
     /*
     // MARK: - Navigation
