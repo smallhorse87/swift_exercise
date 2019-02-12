@@ -31,6 +31,8 @@
 		04F886BF22072118002AD137 /* Observable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F886BE22072118002AD137 /* Observable+Extension.swift */; };
 		04F886C12207B1E7002AD137 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F886C02207B1E7002AD137 /* BaseModel.swift */; };
 		04F886C32207B37E002AD137 /* TopicListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F886C22207B37E002AD137 /* TopicListModel.swift */; };
+		50EA60E1221278C0008117EB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EA60E0221278C0008117EB /* BaseViewController.swift */; };
+		50EA60E322127C2D008117EB /* LeftUserHeadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EA60E222127C2D008117EB /* LeftUserHeadCell.swift */; };
 		81255C96220529D70025D549 /* V2EXSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255C95220529D70025D549 /* V2EXSettings.swift */; };
 		81255C982205398D0025D549 /* V2Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255C972205398D0025D549 /* V2Style.swift */; };
 		81255C9A220543970025D549 /* V2ex+Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255C99220543970025D549 /* V2ex+Defines.swift */; };
@@ -151,6 +153,8 @@
 		04F886BE22072118002AD137 /* Observable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Extension.swift"; sourceTree = "<group>"; };
 		04F886C02207B1E7002AD137 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		04F886C22207B37E002AD137 /* TopicListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicListModel.swift; sourceTree = "<group>"; };
+		50EA60E0221278C0008117EB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		50EA60E222127C2D008117EB /* LeftUserHeadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftUserHeadCell.swift; sourceTree = "<group>"; };
 		52921706080F2641F7739083 /* Pods-swift_exercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift_exercise.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift_exercise/Pods-swift_exercise.release.xcconfig"; sourceTree = "<group>"; };
 		81255C95220529D70025D549 /* V2EXSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2EXSettings.swift; sourceTree = "<group>"; };
 		81255C972205398D0025D549 /* V2Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2Style.swift; sourceTree = "<group>"; };
@@ -405,12 +409,13 @@
 		81255CA9220572340025D549 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				50EA60E0221278C0008117EB /* BaseViewController.swift */,
+				817017A522114C2B006B8494 /* LeftViewController.swift */,
 				81255CAA220572430025D549 /* V2WebViewViewController.swift */,
 				81255CB1220577940025D549 /* HomeViewController.swift */,
 				81255CB5220579220025D549 /* MemberViewController.swift */,
 				81255CB722057A9C0025D549 /* TopicDetailViewController.swift */,
 				81255CBC22057C460025D549 /* NodeTopicListViewController.swift */,
-				817017A522114C2B006B8494 /* LeftViewController.swift */,
 				817017A722114C7A006B8494 /* RightViewController.swift */,
 			);
 			path = Controller;
@@ -456,6 +461,7 @@
 				81EEBED9220FEA4100F76A43 /* RightNodeTableViewCell.swift */,
 				81EEBEDB220FEC3000F76A43 /* NotificationTableViewCell.swift */,
 				81EEBEEE22100C3C00F76A43 /* PodCellTableViewCell.swift */,
+				50EA60E222127C2D008117EB /* LeftUserHeadCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -773,6 +779,7 @@
 				81EEBF042210158300F76A43 /* TopicDetailToolCell.swift in Sources */,
 				81255CB6220579220025D549 /* MemberViewController.swift in Sources */,
 				81EEBED8220FE65100F76A43 /* LeftNodeTableViewCell.swift in Sources */,
+				50EA60E322127C2D008117EB /* LeftUserHeadCell.swift in Sources */,
 				81255C982205398D0025D549 /* V2Style.swift in Sources */,
 				81255C9A220543970025D549 /* V2ex+Defines.swift in Sources */,
 				81EEBF002210155500F76A43 /* TopicDetailWebViewContentCell.swift in Sources */,
@@ -813,6 +820,7 @@
 				81EEBF1B2210177200F76A43 /* MemberTopicCell.swift in Sources */,
 				81EEBF21221017B500F76A43 /* LogoutTableViewCell.swift in Sources */,
 				81255C9C220547320025D549 /* V2Client.swift in Sources */,
+				50EA60E1221278C0008117EB /* BaseViewController.swift in Sources */,
 				817017A822114C7A006B8494 /* RightViewController.swift in Sources */,
 				81255CA422056CF40025D549 /* AnalyzeURLHelper.swift in Sources */,
 				81EEBF0E2210168100F76A43 /* V2Photo.swift in Sources */,
