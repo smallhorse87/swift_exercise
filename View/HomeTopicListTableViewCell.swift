@@ -36,7 +36,6 @@ class HomeTopicListTableViewCell: UITableViewCell {
         label.font = v2Font(14)
         return label
     }()
-    ///stony study  {}() 这是个什么语法？
     
     /// 日期 和 最后发送人
     var dateAndLastPostUserLabel: UILabel = {
@@ -106,7 +105,6 @@ class HomeTopicListTableViewCell: UITableViewCell {
         
         self.setupLayout()
         
-        //stony study [weak self] 这是个什么用法
         self.themeChnagedHandler = { [weak self] (style) -> Void in
             if style == V2EXColor.V2EXColorStyleDefault {
                 self?.nodeBackgroundImageView.image = HomeTopicListTableViewCell.nodeBackgroundImage_Default
@@ -135,7 +133,7 @@ class HomeTopicListTableViewCell: UITableViewCell {
         //点击用户头像，跳转到用户主页
         self.avatarImageView.isUserInteractionEnabled = true
         self.userNameLabel.isUserInteractionEnabled   = true
-        //stony study Any指的是什么 #selector是什么
+        //stony study #selector是什么
         var userNameTap = UITapGestureRecognizer(target: self, action: #selector(HomeTopicListTableViewCell.userNameTap(_:)))
         self.avatarImageView.addGestureRecognizer(userNameTap)
         userNameTap = UITapGestureRecognizer(target: self, action: #selector(HomeTopicListTableViewCell.userNameTap(_:)))

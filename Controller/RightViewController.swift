@@ -8,6 +8,8 @@
 
 import UIKit
 
+import FXBlurView
+
 let RightViewControllerRightNodes = [
     rightNodeModel(nodeName: NSLocalizedString("tech" ), nodeTab: "tech"),
     rightNodeModel(nodeName: NSLocalizedString("creative" ), nodeTab: "creative"),
@@ -24,11 +26,35 @@ let RightViewControllerRightNodes = [
     rightNodeModel(nodeName: NSLocalizedString("members" ), nodeTab: "members"),
 ]
 
-class RightViewController: UIViewController {
+class RightViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+    
+    let rightNodes = RightViewControllerRightNodes
+    var currentSelectedTabIndex = 0
 
+    var backgroundImageView:UIImageView?
+    var frostedView = FXBlurView()
+    
+    fileprivate lazy var tableView:UITableView = {
+        let tableView = UITableView()
+        tableView.backgroundColor = UIColor.clear
+        tableView.estimatedRowHeight = 100
+        tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        if #available(iOS 11.0, *) {
+            tableView.contentInsetAdjustmentBehavior = .never
+        }
+        
+        regClass(tableView, cell: RightNodeTableViewCell.self)
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        return tableView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.backgroundColor = V2EXColor.colors.v2_backgroundColor
+        
+        var currentTab = V2EXSettings.sharedInstance
         // Do any additional setup after loading the view.
     }
     

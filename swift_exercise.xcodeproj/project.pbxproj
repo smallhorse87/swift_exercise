@@ -411,12 +411,12 @@
 			children = (
 				50EA60E0221278C0008117EB /* BaseViewController.swift */,
 				817017A522114C2B006B8494 /* LeftViewController.swift */,
-				81255CAA220572430025D549 /* V2WebViewViewController.swift */,
+				817017A722114C7A006B8494 /* RightViewController.swift */,
 				81255CB1220577940025D549 /* HomeViewController.swift */,
+				81255CAA220572430025D549 /* V2WebViewViewController.swift */,
 				81255CB5220579220025D549 /* MemberViewController.swift */,
 				81255CB722057A9C0025D549 /* TopicDetailViewController.swift */,
 				81255CBC22057C460025D549 /* NodeTopicListViewController.swift */,
-				817017A722114C7A006B8494 /* RightViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -455,10 +455,10 @@
 				81EEBEFC221014FC00F76A43 /* Topic */,
 				81EEBEF7221011FC00F76A43 /* Node */,
 				81EEBEF022100DDC00F76A43 /* More */,
-				81BC50DB220FC19600424215 /* HomeTopicListTableViewCell.swift */,
 				81BC50DD220FD9B400424215 /* BaseDetailTableViewCell.swift */,
 				81EEBED7220FE65100F76A43 /* LeftNodeTableViewCell.swift */,
 				81EEBED9220FEA4100F76A43 /* RightNodeTableViewCell.swift */,
+				81BC50DB220FC19600424215 /* HomeTopicListTableViewCell.swift */,
 				81EEBEDB220FEC3000F76A43 /* NotificationTableViewCell.swift */,
 				81EEBEEE22100C3C00F76A43 /* PodCellTableViewCell.swift */,
 				50EA60E222127C2D008117EB /* LeftUserHeadCell.swift */,
