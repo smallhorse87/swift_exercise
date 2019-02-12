@@ -32,13 +32,13 @@ class PodCellTableViewCell: BaseDetailTableViewCell{
     }
     
     fileprivate func setupLayout() {
-        self.titleLable.snp.remakeConstraints { (make) in
+        self.titleLabel.snp.remakeConstraints { (make) in
             make.left.top.equalTo(self.contentView).offset(12)
         }
         self.descriptionLabel.snp.makeConstraints { (make) in
-            make.left.equalTo(self.titleLable)
+            make.left.equalTo(self.titleLabel)
             make.right.equalTo(self.contentView).offset(-30)
-            make.top.equalTo(self.titleLable.snp.bottom)
+            make.top.equalTo(self.titleLabel.snp.bottom)
             make.bottom.equalTo(self.contentView).offset(-8)
         }
     }

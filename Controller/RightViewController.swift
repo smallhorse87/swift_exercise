@@ -75,6 +75,7 @@ class RightViewController: UIViewController,UITableViewDataSource,UITableViewDel
         self.tableView.snp.makeConstraints { (make) in
             make.top.right.bottom.left.equalTo(self.view)
         }
+        
         self.themeChnagedHandler = {[weak self] (style) -> Void in
             if V2EXColor.sharedInstance.style == V2EXColor.V2EXColorStyleDefault {
                 self?.backgroundImageView?.image = UIImage(named: "32.jpg")

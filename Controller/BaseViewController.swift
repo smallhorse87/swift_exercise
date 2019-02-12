@@ -1,48 +1,31 @@
 //
 //  BaseViewController.swift
-//  swift_exercise
+//  V2ex-Swift
 //
-//  Created by zhitian_UI on 2019/2/12.
-//  Copyright © 2019 mac. All rights reserved.
+//  Created by huangfeng on 2/2/16.
+//  Copyright © 2016 Fin. All rights reserved.
 //
 
 import UIKit
 
 class BaseViewController: UIViewController {
+    fileprivate weak var _loadView:V2LoadingView?
     
-    fileprivate weak var _loadView:V2LoadingView!
-    
-    func hideLoadingView () {
-        self._loadView?.removeFromSuperview()
-    }
-    
-    func showLoadingView () {
+    func showLoadingView (){
+        
         self.hideLoadingView()
         
         let aloadView = V2LoadingView()
         aloadView.backgroundColor = self.view.backgroundColor
         self.view.addSubview(aloadView)
-        aloadView.snp.makeConstraints { (make) in
+        aloadView.snp.makeConstraints{ (make) -> Void in
             make.top.right.bottom.left.equalTo(self.view)
         }
         self._loadView = aloadView
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    func hideLoadingView() {
+        self._loadView?.removeFromSuperview()
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -94,7 +94,7 @@ class HomeViewController: UIViewController {
         rightButton.setImage(UIImage.imageUsedTemplateMode("ic_more_horiz_36pt")!.withRenderingMode(.alwaysTemplate), for: UIControlState())
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: rightButton)
         rightButton.addTarget(self, action: #selector(HomeViewController.rightClick), for: .touchUpInside)
-        
+
     }
     @objc func leftClick(){
         V2Client.sharedInstance.drawerController?.toggleLeftDrawerSide(animated: true, completion: nil)
@@ -141,9 +141,7 @@ class HomeViewController: UIViewController {
                 if let err = error as? ApiError {
                     switch err {
                     case .needs2FA:
-                        //stony todo
-                        //V2Client.sharedInstance.centerViewController!.navigationController?.present(TwoFAViewController(), animated: true, completion: nil);
-                        NSLog("")
+                        V2Client.sharedInstance.centerViewController!.navigationController?.present(TwoFAViewController(), animated: true, completion: nil);
                     default:
                         SVProgressHUD.showError(withStatus: err.rawString())
                     }
@@ -207,7 +205,7 @@ extension HomeViewController:UITableViewDataSource,UITableViewDelegate {
         let titleHeight = item.topicTitleLayout?.textBoundingRect.size.height ?? 0
         //          上间隔   头像高度  头像下间隔       标题高度    标题下间隔 cell间隔
         let height = 12    +  35     +  12      + titleHeight   + 12      + 8
-        
+
         return height
     }
     
@@ -222,12 +220,11 @@ extension HomeViewController:UITableViewDataSource,UITableViewDelegate {
         
         if let id = item.topicId {
             let topicDetailController = TopicDetailViewController();
-//stony todo
-//            topicDetailController.topicId = id ;
-//            topicDetailController.ignoreTopicHandler = {[weak self] (topicId) in
-//                self?.perform(#selector(HomeViewController.ignoreTopicHandler(_:)), with: topicId, afterDelay: 0.6)
-//            }
-//            self.navigationController?.pushViewController(topicDetailController, animated: true)
+            topicDetailController.topicId = id ;
+            topicDetailController.ignoreTopicHandler = {[weak self] (topicId) in
+                self?.perform(#selector(HomeViewController.ignoreTopicHandler(_:)), with: topicId, afterDelay: 0.6)
+            }
+            self.navigationController?.pushViewController(topicDetailController, animated: true)
             tableView .deselectRow(at: indexPath, animated: true);
         }
     }
@@ -256,7 +253,6 @@ extension HomeViewController:UITableViewDataSource,UITableViewDelegate {
         
         self.tableView.endUpdates()
         
-        
+
     }
 }
-

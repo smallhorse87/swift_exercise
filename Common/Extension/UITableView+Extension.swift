@@ -40,7 +40,7 @@ func getCell<T: UITableViewCell> (_ tableView:UITableView, cell: T.Type, indexPa
 }
 
 extension UITableView {
-    func v2_scrolleToBottom() {
+    func v2_scrollToBottom() {
         let section = self.numberOfSections - 1
         let row = self.numberOfRows(inSection: section) - 1
         if section < 0 || row < 0 {

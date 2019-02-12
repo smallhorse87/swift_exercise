@@ -33,6 +33,19 @@
 		04F886C32207B37E002AD137 /* TopicListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F886C22207B37E002AD137 /* TopicListModel.swift */; };
 		50EA60E1221278C0008117EB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EA60E0221278C0008117EB /* BaseViewController.swift */; };
 		50EA60E322127C2D008117EB /* LeftUserHeadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50EA60E222127C2D008117EB /* LeftUserHeadCell.swift */; };
+		810E7DA22212BD0600AC65EA /* TwoFAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810E7D952212BD0500AC65EA /* TwoFAViewController.swift */; };
+		810E7DA32212BD0600AC65EA /* NodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810E7D962212BD0500AC65EA /* NodesViewController.swift */; };
+		810E7DA42212BD0600AC65EA /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810E7D972212BD0500AC65EA /* FavoritesViewController.swift */; };
+		810E7DA52212BD0600AC65EA /* MyCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810E7D982212BD0500AC65EA /* MyCenterViewController.swift */; };
+		810E7DA62212BD0600AC65EA /* AccountsManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810E7D992212BD0500AC65EA /* AccountsManagerViewController.swift */; };
+		810E7DA72212BD0600AC65EA /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810E7D9A2212BD0600AC65EA /* NotificationsViewController.swift */; };
+		810E7DA82212BD0600AC65EA /* PodsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810E7D9B2212BD0600AC65EA /* PodsTableViewController.swift */; };
+		810E7DA92212BD0600AC65EA /* WritingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810E7D9C2212BD0600AC65EA /* WritingViewController.swift */; };
+		810E7DAA2212BD0600AC65EA /* RelevantCommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810E7D9D2212BD0600AC65EA /* RelevantCommentsViewController.swift */; };
+		810E7DAB2212BD0600AC65EA /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810E7D9E2212BD0600AC65EA /* MoreViewController.swift */; };
+		810E7DAC2212BD0600AC65EA /* V2ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810E7D9F2212BD0600AC65EA /* V2ActivityViewController.swift */; };
+		810E7DAD2212BD0600AC65EA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810E7DA02212BD0600AC65EA /* LoginViewController.swift */; };
+		810E7DAE2212BD0600AC65EA /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810E7DA12212BD0600AC65EA /* SettingsTableViewController.swift */; };
 		81255C96220529D70025D549 /* V2EXSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255C95220529D70025D549 /* V2EXSettings.swift */; };
 		81255C982205398D0025D549 /* V2Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255C972205398D0025D549 /* V2Style.swift */; };
 		81255C9A220543970025D549 /* V2ex+Defines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81255C99220543970025D549 /* V2ex+Defines.swift */; };
@@ -57,7 +70,6 @@
 		8170179922110F42006B8494 /* V2RefreshFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8170179822110F42006B8494 /* V2RefreshFooter.swift */; };
 		8170179B2211124C006B8494 /* V2LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8170179A2211124C006B8494 /* V2LoadingView.swift */; };
 		8170179D2211146D006B8494 /* NotificationMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8170179C2211146D006B8494 /* NotificationMenuButton.swift */; };
-		8170179F22111AE7006B8494 /* V2ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8170179E22111AE7006B8494 /* V2ActivityViewController.swift */; };
 		817017A1221130BE006B8494 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817017A0221130BE006B8494 /* UIView+Extension.swift */; };
 		817017A4221133B3006B8494 /* V2WebViewProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817017A3221133B3006B8494 /* V2WebViewProgressView.swift */; };
 		817017A622114C2B006B8494 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817017A522114C2B006B8494 /* LeftViewController.swift */; };
@@ -156,6 +168,19 @@
 		50EA60E0221278C0008117EB /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		50EA60E222127C2D008117EB /* LeftUserHeadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftUserHeadCell.swift; sourceTree = "<group>"; };
 		52921706080F2641F7739083 /* Pods-swift_exercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift_exercise.release.xcconfig"; path = "Pods/Target Support Files/Pods-swift_exercise/Pods-swift_exercise.release.xcconfig"; sourceTree = "<group>"; };
+		810E7D952212BD0500AC65EA /* TwoFAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoFAViewController.swift; sourceTree = "<group>"; };
+		810E7D962212BD0500AC65EA /* NodesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodesViewController.swift; sourceTree = "<group>"; };
+		810E7D972212BD0500AC65EA /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		810E7D982212BD0500AC65EA /* MyCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCenterViewController.swift; sourceTree = "<group>"; };
+		810E7D992212BD0500AC65EA /* AccountsManagerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsManagerViewController.swift; sourceTree = "<group>"; };
+		810E7D9A2212BD0600AC65EA /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		810E7D9B2212BD0600AC65EA /* PodsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodsTableViewController.swift; sourceTree = "<group>"; };
+		810E7D9C2212BD0600AC65EA /* WritingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WritingViewController.swift; sourceTree = "<group>"; };
+		810E7D9D2212BD0600AC65EA /* RelevantCommentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelevantCommentsViewController.swift; sourceTree = "<group>"; };
+		810E7D9E2212BD0600AC65EA /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		810E7D9F2212BD0600AC65EA /* V2ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = V2ActivityViewController.swift; sourceTree = "<group>"; };
+		810E7DA02212BD0600AC65EA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		810E7DA12212BD0600AC65EA /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		81255C95220529D70025D549 /* V2EXSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2EXSettings.swift; sourceTree = "<group>"; };
 		81255C972205398D0025D549 /* V2Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2Style.swift; sourceTree = "<group>"; };
 		81255C99220543970025D549 /* V2ex+Defines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "V2ex+Defines.swift"; sourceTree = "<group>"; };
@@ -180,7 +205,6 @@
 		8170179822110F42006B8494 /* V2RefreshFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2RefreshFooter.swift; sourceTree = "<group>"; };
 		8170179A2211124C006B8494 /* V2LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2LoadingView.swift; sourceTree = "<group>"; };
 		8170179C2211146D006B8494 /* NotificationMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationMenuButton.swift; sourceTree = "<group>"; };
-		8170179E22111AE7006B8494 /* V2ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2ActivityViewController.swift; sourceTree = "<group>"; };
 		817017A0221130BE006B8494 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		817017A3221133B3006B8494 /* V2WebViewProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2WebViewProgressView.swift; sourceTree = "<group>"; };
 		817017A522114C2B006B8494 /* LeftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
@@ -409,6 +433,19 @@
 		81255CA9220572340025D549 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				810E7D992212BD0500AC65EA /* AccountsManagerViewController.swift */,
+				810E7D972212BD0500AC65EA /* FavoritesViewController.swift */,
+				810E7DA02212BD0600AC65EA /* LoginViewController.swift */,
+				810E7D9E2212BD0600AC65EA /* MoreViewController.swift */,
+				810E7D982212BD0500AC65EA /* MyCenterViewController.swift */,
+				810E7D962212BD0500AC65EA /* NodesViewController.swift */,
+				810E7D9A2212BD0600AC65EA /* NotificationsViewController.swift */,
+				810E7D9B2212BD0600AC65EA /* PodsTableViewController.swift */,
+				810E7D9D2212BD0600AC65EA /* RelevantCommentsViewController.swift */,
+				810E7DA12212BD0600AC65EA /* SettingsTableViewController.swift */,
+				810E7D952212BD0500AC65EA /* TwoFAViewController.swift */,
+				810E7D9F2212BD0600AC65EA /* V2ActivityViewController.swift */,
+				810E7D9C2212BD0600AC65EA /* WritingViewController.swift */,
 				50EA60E0221278C0008117EB /* BaseViewController.swift */,
 				817017A522114C2B006B8494 /* LeftViewController.swift */,
 				817017A722114C7A006B8494 /* RightViewController.swift */,
@@ -478,7 +515,6 @@
 				8170179A2211124C006B8494 /* V2LoadingView.swift */,
 				81EEBEE2220FFCD400F76A43 /* UIButton+Extension.swift */,
 				8170179C2211146D006B8494 /* NotificationMenuButton.swift */,
-				8170179E22111AE7006B8494 /* V2ActivityViewController.swift */,
 				81EEBEF322100F2900F76A43 /* V2Slider.swift */,
 				81EEBF15221016FF00F76A43 /* INSImageView.swift */,
 			);
@@ -779,6 +815,7 @@
 				81EEBF042210158300F76A43 /* TopicDetailToolCell.swift in Sources */,
 				81255CB6220579220025D549 /* MemberViewController.swift in Sources */,
 				81EEBED8220FE65100F76A43 /* LeftNodeTableViewCell.swift in Sources */,
+				810E7DAA2212BD0600AC65EA /* RelevantCommentsViewController.swift in Sources */,
 				50EA60E322127C2D008117EB /* LeftUserHeadCell.swift in Sources */,
 				81255C982205398D0025D549 /* V2Style.swift in Sources */,
 				81255C9A220543970025D549 /* V2ex+Defines.swift in Sources */,
@@ -787,24 +824,29 @@
 				81BC50DC220FC19600424215 /* HomeTopicListTableViewCell.swift in Sources */,
 				8170179B2211124C006B8494 /* V2LoadingView.swift in Sources */,
 				81255CA022055DE40025D549 /* V2EXMentionedBindingParser.swift in Sources */,
+				810E7DAB2212BD0600AC65EA /* MoreViewController.swift in Sources */,
 				8170179D2211146D006B8494 /* NotificationMenuButton.swift in Sources */,
 				81DF14CD22068B26008DFEC9 /* V2ProgressHUD.swift in Sources */,
 				81DF14D5220699B7008DFEC9 /* V2HitTestSlopButton.swift in Sources */,
+				810E7DA62212BD0600AC65EA /* AccountsManagerViewController.swift in Sources */,
 				81EEBEE5220FFE0800F76A43 /* NotificationsModel.swift in Sources */,
 				81255CBD22057C460025D549 /* NodeTopicListViewController.swift in Sources */,
 				81255C9E220549520025D549 /* V2Response.swift in Sources */,
 				81EEBF022210156E00F76A43 /* TopicDetailCommentCell.swift in Sources */,
 				81EEBF192210175D00F76A43 /* MemberHeaderCell.swift in Sources */,
 				04F886BD2207152E002AD137 /* V2EXTargetType.swift in Sources */,
+				810E7DAC2212BD0600AC65EA /* V2ActivityViewController.swift in Sources */,
 				04F886BF22072118002AD137 /* Observable+Extension.swift in Sources */,
 				8170179922110F42006B8494 /* V2RefreshFooter.swift in Sources */,
 				81EEBEE7220FFE5900F76A43 /* TopicCommentModel.swift in Sources */,
 				81255CB822057A9C0025D549 /* TopicDetailViewController.swift in Sources */,
 				81EEBF0F2210168100F76A43 /* V2PhotoBrowser.swift in Sources */,
 				81EEBF112210168100F76A43 /* V2PhotoBrowserTransionDismiss.swift in Sources */,
+				810E7DA32212BD0600AC65EA /* NodesViewController.swift in Sources */,
 				04F886BB22071316002AD137 /* TopicListApi.swift in Sources */,
 				04F886B72206E698002AD137 /* UITableView+FINAutomaticHeightCell.swift in Sources */,
 				81255CC122058AF30025D549 /* UserModel.swift in Sources */,
+				810E7DA52212BD0600AC65EA /* MyCenterViewController.swift in Sources */,
 				81255CA2220560410025D549 /* V2UsersKeychain.swift in Sources */,
 				04F886C12207B1E7002AD137 /* BaseModel.swift in Sources */,
 				81EEBEF422100F2900F76A43 /* V2Slider.swift in Sources */,
@@ -822,7 +864,9 @@
 				81255C9C220547320025D549 /* V2Client.swift in Sources */,
 				50EA60E1221278C0008117EB /* BaseViewController.swift in Sources */,
 				817017A822114C7A006B8494 /* RightViewController.swift in Sources */,
+				810E7DA22212BD0600AC65EA /* TwoFAViewController.swift in Sources */,
 				81255CA422056CF40025D549 /* AnalyzeURLHelper.swift in Sources */,
+				810E7DAE2212BD0600AC65EA /* SettingsTableViewController.swift in Sources */,
 				81EEBF0E2210168100F76A43 /* V2Photo.swift in Sources */,
 				81255CB4220577DA0025D549 /* V2EXNavigationController.swift in Sources */,
 				81EEBF16221016FF00F76A43 /* INSImageView.swift in Sources */,
@@ -830,6 +874,7 @@
 				0445651D2206DBAC00DF46E7 /* UIImage+Extension.swift in Sources */,
 				0445651B2205032900DF46E7 /* V2EXColor.swift in Sources */,
 				04F886C32207B37E002AD137 /* TopicListModel.swift in Sources */,
+				810E7DA42212BD0600AC65EA /* FavoritesViewController.swift in Sources */,
 				81255CB2220577940025D549 /* HomeViewController.swift in Sources */,
 				81EEBEEB220FFEA800F76A43 /* MemberModel.swift in Sources */,
 				0473DCCC2204FE3600141FB6 /* AppDelegate.swift in Sources */,
@@ -841,6 +886,7 @@
 				81EEBEDA220FEA4100F76A43 /* RightNodeTableViewCell.swift in Sources */,
 				81701795221107DC006B8494 /* V2FPSLabel.swift in Sources */,
 				81255C96220529D70025D549 /* V2EXSettings.swift in Sources */,
+				810E7DAD2212BD0600AC65EA /* LoginViewController.swift in Sources */,
 				81EEBEFB221013D800F76A43 /* NodeCollectionReusableView.swift in Sources */,
 				817017A1221130BE006B8494 /* UIView+Extension.swift in Sources */,
 				81EEBEFE2210152000F76A43 /* TopicDetailHeaderCell.swift in Sources */,
@@ -848,11 +894,13 @@
 				81EEBEDE220FED8A00F76A43 /* V2SpacingLabel.swift in Sources */,
 				817017A622114C2B006B8494 /* LeftViewController.swift in Sources */,
 				81EEBEF6221010F900F76A43 /* FontDisplayTableViewCell.swift in Sources */,
-				8170179F22111AE7006B8494 /* V2ActivityViewController.swift in Sources */,
 				81EEBF122210168100F76A43 /* V2PhotoBrowserTransionPresent.swift in Sources */,
 				81255CA8220570870025D549 /* UITableView+Extension.swift in Sources */,
 				8170179722110A43006B8494 /* V2RefreshHeader.swift in Sources */,
 				81DF14D12206921C008DFEC9 /* WebViewImageProtocol.swift in Sources */,
+				810E7DA92212BD0600AC65EA /* WritingViewController.swift in Sources */,
+				810E7DA72212BD0600AC65EA /* NotificationsViewController.swift in Sources */,
+				810E7DA82212BD0600AC65EA /* PodsTableViewController.swift in Sources */,
 				81EEBF102210168100F76A43 /* V2PhotoBrowserSwipeInteractiveTransition.swift in Sources */,
 				81EEBEEF22100C3C00F76A43 /* PodCellTableViewCell.swift in Sources */,
 			);

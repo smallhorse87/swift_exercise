@@ -66,7 +66,7 @@ class HomeTopicListTableViewCell: UITableViewCell {
     var nodeBackgroundImageView:UIImageView = UIImageView()
     
     ///帖子标题
-    var topicTitleLable: YYLabel = {
+    var topictitleLabel: YYLabel = {
         let label = YYLabel()
         label.textVerticalAlignment = .top
         label.font = v2Font(18)
@@ -101,7 +101,7 @@ class HomeTopicListTableViewCell: UITableViewCell {
         self.contentPanel.addSubview(self.replyCountIconImageView)
         self.contentPanel.addSubview(self.nodeBackgroundImageView)
         self.contentPanel.addSubview(self.nodeNameLabel)
-        self.contentPanel.addSubview(self.topicTitleLable)
+        self.contentPanel.addSubview(self.topictitleLabel)
         
         self.setupLayout()
         
@@ -120,14 +120,14 @@ class HomeTopicListTableViewCell: UITableViewCell {
             self?.dateAndLastPostUserLabel.textColor = V2EXColor.colors.v2_TopicListDateColor
             self?.replyCountLabel.textColor = V2EXColor.colors.v2_TopicListDateColor
             self?.nodeNameLabel.textColor = V2EXColor.colors.v2_TopicListDateColor
-            self?.topicTitleLable.textColor = V2EXColor.colors.v2_TopicListTitleColor
+            self?.topictitleLabel.textColor = V2EXColor.colors.v2_TopicListTitleColor
             
             self?.avatarImageView.backgroundColor = self?.contentPanel.backgroundColor
             self?.userNameLabel.backgroundColor = self?.contentPanel.backgroundColor
             self?.dateAndLastPostUserLabel.backgroundColor = self?.contentPanel.backgroundColor
             self?.replyCountLabel.backgroundColor = self?.contentPanel.backgroundColor
             self?.replyCountIconImageView.backgroundColor = self?.contentPanel.backgroundColor
-            self?.topicTitleLable.backgroundColor = self?.contentPanel.backgroundColor
+            self?.topictitleLabel.backgroundColor = self?.contentPanel.backgroundColor
         }
         
         //点击用户头像，跳转到用户主页
@@ -186,7 +186,7 @@ class HomeTopicListTableViewCell: UITableViewCell {
             make.right.equalTo(self.nodeNameLabel).offset(5)
         }
         
-        self.topicTitleLable.snp.makeConstraints { (make) in
+        self.topictitleLabel.snp.makeConstraints { (make) in
             make.top.equalTo(self.avatarImageView.snp.bottom).offset(12)
             make.left.equalTo(self.avatarImageView)
             make.right.equalTo(self.contentPanel).offset(-12)
@@ -228,7 +228,7 @@ class HomeTopicListTableViewCell: UITableViewCell {
                 return
             }
             else {
-                self.topicTitleLable.textLayout = layout
+                self.topictitleLabel.textLayout = layout
             }
         }
         

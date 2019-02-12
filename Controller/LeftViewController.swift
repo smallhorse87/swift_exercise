@@ -1,13 +1,12 @@
 //
 //  LeftViewController.swift
-//  swift_exercise
+//  V2ex-Swift
 //
-//  Created by chenxiaosong on 2019/2/11.
-//  Copyright © 2019年 mac. All rights reserved.
+//  Created by huangfeng on 1/14/16.
+//  Copyright © 2016 Fin. All rights reserved.
 //
 
 import UIKit
-
 import FXBlurView
 
 class LeftViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
@@ -17,18 +16,17 @@ class LeftViewController: UIViewController,UITableViewDataSource,UITableViewDele
         backgroundImageView.contentMode = .scaleToFill
         return backgroundImageView
     }()
-    
     var frostedView: FXBlurView = {
         let frostedView = FXBlurView()
         frostedView.isDynamic = false
         frostedView.tintColor = UIColor.black
-        return frostedView
+        return frostedView;
     }()
     
     fileprivate lazy var tableView: UITableView = {
-        let tableView = UITableView()
+        let tableView = UITableView();
         tableView.backgroundColor = UIColor.clear
-        tableView.estimatedRowHeight = 100
+        tableView.estimatedRowHeight=100;
         tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         
         regClass(tableView, cell: LeftUserHeadCell.self)
@@ -37,13 +35,12 @@ class LeftViewController: UIViewController,UITableViewDataSource,UITableViewDele
         
         tableView.delegate = self
         tableView.dataSource = self
-        
         return tableView
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = V2EXColor.colors.v2_backgroundColor
+        self.view.backgroundColor = V2EXColor.colors.v2_backgroundColor;
         
         self.backgroundImageView.frame = self.view.frame
         view.addSubview(self.backgroundImageView)
@@ -52,16 +49,15 @@ class LeftViewController: UIViewController,UITableViewDataSource,UITableViewDele
         self.frostedView.frame = self.view.frame
         self.view.addSubview(self.frostedView)
         
-        self.view.addSubview(self.tableView)
-        self.tableView.snp.makeConstraints { (make) in
-            make.top.right.bottom.left.equalTo(self.view)
+        self.view.addSubview(self.tableView);
+        self.tableView.snp.makeConstraints{ (make) -> Void in
+            make.top.right.bottom.left.equalTo(self.view);
         }
         
         if V2User.sharedInstance.isLogin {
             self.getUserInfo(V2User.sharedInstance.username!)
         }
-        
-        self.themeChnagedHandler = { [weak self](style) -> Void in
+        self.themeChnagedHandler = {[weak self] (style) -> Void in
             if V2EXColor.sharedInstance.style == V2EXColor.V2EXColorStyleDefault {
                 self?.backgroundImageView.image = UIImage(named: "32.jpg")
             }
@@ -69,29 +65,25 @@ class LeftViewController: UIViewController,UITableViewDataSource,UITableViewDele
                 self?.backgroundImageView.image = UIImage(named: "12.jpg")
             }
             self?.frostedView.updateAsynchronously(true, completion: nil)
-            
         }
-        // Do any additional setup after loading the view.
     }
-    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return [1,3,2][section]
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if (indexPath.section == 1 && indexPath.row == 2) {
+        if (indexPath.section == 1 && indexPath.row == 2){
             return 55 + 10
         }
-        return [180, 55 + SEPARATOR_HEIGHT, 55+SEPARATOR_HEIGHT][indexPath.section]
+        return [180, 55+SEPARATOR_HEIGHT, 55+SEPARATOR_HEIGHT][indexPath.section]
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
-            if indexPath.row == 0 {
-                let cell = getCell(tableView, cell: LeftUserHeadCell.self, indexPath: indexPath)
-                return cell
+            if  indexPath.row == 0 {
+                let cell = getCell(tableView, cell: LeftUserHeadCell.self, indexPath: indexPath);
+                return cell ;
             }
             else {
                 return UITableViewCell()
@@ -105,7 +97,7 @@ class LeftViewController: UIViewController,UITableViewDataSource,UITableViewDele
             }
             else {
                 let cell = getCell(tableView, cell: LeftNodeTableViewCell.self, indexPath: indexPath)
-                cell.nodeNameLabel.text = [NSLocalizedString("me"), "", NSLocalizedString("favorites")][indexPath.row]
+                cell.nodeNameLabel.text = [NSLocalizedString("me"),"",NSLocalizedString("favorites")][indexPath.row]
                 let names = ["ic_face","","ic_turned_in_not"]
                 cell.nodeImageView.image = UIImage.imageUsedTemplateMode(names[indexPath.row])
                 return cell
@@ -113,35 +105,74 @@ class LeftViewController: UIViewController,UITableViewDataSource,UITableViewDele
         }
         else {
             let cell = getCell(tableView, cell: LeftNodeTableViewCell.self, indexPath: indexPath)
-            cell.nodeNameLabel.text = [NSLocalizedString("node"),NSLocalizedString("more")][indexPath.row]
+            cell.nodeNameLabel.text = [NSLocalizedString("nodes"),NSLocalizedString("more")][indexPath.row]
             let names = ["ic_navigation","ic_settings_input_svideo"]
             cell.nodeImageView.image = UIImage.imageUsedTemplateMode(names[indexPath.row])
             return cell
         }
     }
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //stony todo
+        if indexPath.section == 0 {
+            if indexPath.row == 0 {
+                if !V2User.sharedInstance.isLogin {
+                    let loginViewController = LoginViewController()
+                    V2Client.sharedInstance.centerViewController!.navigationController?.present(loginViewController, animated: true, completion: nil);
+                }else{
+                    let memberViewController = MyCenterViewController()
+                    memberViewController.username = V2User.sharedInstance.username
+                    V2Client.sharedInstance.centerNavigation?.pushViewController(memberViewController, animated: true)
+                    V2Client.sharedInstance.drawerController?.closeDrawer(animated: true, completion: nil)
+                }
+            }
+        }
+        else if indexPath.section == 1 {
+            if !V2User.sharedInstance.isLogin {
+                let loginViewController = LoginViewController()
+                V2Client.sharedInstance.centerNavigation?.present(loginViewController, animated: true, completion: nil);
+                return
+            }
+            if indexPath.row == 0 {
+                let memberViewController = MyCenterViewController()
+                memberViewController.username = V2User.sharedInstance.username
+                V2Client.sharedInstance.centerNavigation?.pushViewController(memberViewController, animated: true)
+            }
+            else if indexPath.row == 1 {
+                let notificationsViewController = NotificationsViewController()
+                V2Client.sharedInstance.centerNavigation?.pushViewController(notificationsViewController, animated: true)
+            }
+            else if indexPath.row == 2 {
+                let favoritesViewController = FavoritesViewController()
+                V2Client.sharedInstance.centerNavigation?.pushViewController(favoritesViewController, animated: true)
+            }
+            V2Client.sharedInstance.drawerController?.closeDrawer(animated: true, completion: nil)
+            
+        }
+        else if indexPath.section == 2 {
+            if indexPath.row == 0 {
+                let nodesViewController = NodesViewController()
+                V2Client.sharedInstance.centerViewController!.navigationController?.pushViewController(nodesViewController, animated: true)
+            }
+            else if indexPath.row == 1 {
+                let moreViewController = MoreViewController()
+                V2Client.sharedInstance.centerViewController!.navigationController?.pushViewController(moreViewController, animated: true)
+            }
+            V2Client.sharedInstance.drawerController?.closeDrawer(animated: true, completion: nil)
+        }
     }
     
-    func getUserInfo(_ userName:String) {
-        UserModel.getUserInfoByUsername(userName) { (response:V2ValueResponse<UserModel>) in
+    
+    
+    // MARK: 获取用户信息
+    func getUserInfo(_ userName:String){
+        UserModel.getUserInfoByUsername(userName) {(response:V2ValueResponse<UserModel>) -> Void in
             if response.success {
+//                self?.tableView.reloadData()
                 NSLog("获取用户信息成功")
             }
-            else {
+            else{
                 NSLog("获取用户信息失败")
             }
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

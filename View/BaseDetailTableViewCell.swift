@@ -10,13 +10,13 @@ import UIKit
 
 class BaseDetailTableViewCell: UITableViewCell {
 
-    var titleLable:UILabel = {
+    var titleLabel:UILabel = {
         let label = UILabel()
         label.font = v2Font(16)
         return label
     }()
     
-    var detailLable:UILabel = {
+    var detailLabel:UILabel = {
         let label = UILabel()
         label.font = v2Font(13)
         return label
@@ -71,12 +71,12 @@ class BaseDetailTableViewCell: UITableViewCell {
         let selectedBackgroundView = UIView()
         self.selectedBackgroundView = selectedBackgroundView
         
-        self.contentView.addSubview(self.titleLable)
+        self.contentView.addSubview(self.titleLabel)
         self.contentView.addSubview(self.detailMarkImageView)
-        self.contentView.addSubview(self.detailLable)
+        self.contentView.addSubview(self.detailLabel)
         self.contentView.addSubview(self.separator)
         
-        self.titleLable.snp.makeConstraints { (make) in
+        self.titleLabel.snp.makeConstraints { (make) in
             make.left.equalTo(self.contentView).offset(12)
             make.centerY.equalTo(self.contentView)
         }
@@ -88,7 +88,7 @@ class BaseDetailTableViewCell: UITableViewCell {
             make.right.equalTo(self.contentView).offset(-12)
         }
         
-        self.detailLable.snp.makeConstraints { (make) in
+        self.detailLabel.snp.makeConstraints { (make) in
             make.right.equalTo(self.detailMarkImageView.snp.left).offset(-5)
             make.centerY.equalTo(self.contentView)
         }
@@ -101,9 +101,9 @@ class BaseDetailTableViewCell: UITableViewCell {
         self.themeChnagedHandler = {[weak self] (style) -> Void in
             self?.backgroundColor = V2EXColor.colors.v2_CellWhiteBackgroundColor
             self?.selectedBackgroundView!.backgroundColor = V2EXColor.colors.v2_backgroundColor
-            self?.titleLable.textColor = V2EXColor.colors.v2_TopicListTitleColor
-            self?.detailMarkImageView.tintColor = self?.titleLable.textColor
-            self?.detailLable.textColor = V2EXColor.colors.v2_TopicListUserNameColor
+            self?.titleLabel.textColor = V2EXColor.colors.v2_TopicListTitleColor
+            self?.detailMarkImageView.tintColor = self?.titleLabel.textColor
+            self?.detailLabel.textColor = V2EXColor.colors.v2_TopicListUserNameColor
             self?.separator.image = createImageWithColor(V2EXColor.colors.v2_SeparatorColor)
         }
     }
